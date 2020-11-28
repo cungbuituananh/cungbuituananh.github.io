@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* .background {
+    text-align: center;
+}
+.background img {
+    height: 100%; */
+
+.logo {
+    text-align: center;
+}
+.logo img {
+    height: 150px;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+    size: 150px;
+}
+body {
+    background-color: hsl(0, 0%, 100%);
+}
+h1 {
+    text-align: center;
+}
+.navbar ul {
+    text-align: center;
+    background-color: rgb(73, 83, 76);
+}
+
+.navbar ul li {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none; /* loại bỏ gạch chân của thẻ a */
+    color: rgb(252, 246, 246);
+    display: block;
+}
+
+.content1 p, .content2 p {
+    margin-left: 25px;
+}
+
+h3 {
+    color: lightsalmon;
+    margin-left: 15px;
+}
+
+.content2 h5 {
+    margin-left: 5px;
+}
+/* Kỹ thuật CSS cover art, sử dụng khi ảnh có size khác nhau hiển thị ảnh trong 1 khung giống nhau */
+.content3 {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+.teacher-pic {
+    width: 200px;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 5px 5px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.img {
+    width: 200px;
+    height: 450px;
+ 
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.info {
+    text-align: center;
+    padding-top: 20px
+}
+ 
