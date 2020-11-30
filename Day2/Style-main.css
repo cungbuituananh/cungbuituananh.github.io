@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -24,7 +25,6 @@
     display: inline;
     padding: 10px;
     font-size: 20px;
-
 }
 
 .navbar a {
@@ -56,12 +56,23 @@ h2 {
 }
 
 .course-list {
-    text-align: center;
     display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
 }
 .course-list img {
     vertical-align: auto;
     height: 400px;
     width: 250px;
     object-fit: cover;
+    padding: 10px;
+}
+
+.course-list a {
+    text-decoration: none;
+    color: rgb(17, 255, 215);
+}
+.course-list a:hover {
+    color: rgb(120, 17, 255);
 }
