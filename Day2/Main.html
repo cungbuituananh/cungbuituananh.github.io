@@ -11,11 +11,14 @@
 <header>
     <nav>
 <!-- Logo -->
-        <div class="logo">
-            <a href="Main.html"> <img src="test/test2" alt="logo">
+        <div class="nav-background">
+            <div class="nav-logo">
+                <a href="Main.html"> <img src="test/test2" alt="logo">
+            </div>
         </div>
+            
 <!-- Navbar -->
-        <div class="navbar">
+        <div class="nav-list">
             <ul>
                 <li><a href="#">Giới Thiệu</a></il>
                 <li><a href="#">Khoá Học</a></li>
@@ -71,42 +74,111 @@
             </div>
         </div>  
     </section>
-<!-- Giáo viên  -->
+<!-- Form Tập Thử  -->
+    <section class="container">
+        <div class="form">
+            <form action="#" method="post">
+                <p>ĐĂNG KÝ TẬP THỬ </p>
+                <div class="input-box">
+                    <input type="text" placeholder="Họ & Tên">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Tuổi">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Email + SĐT">
+                </div>
+                <div class="btn-box">
+                    <button type="submit">
+                            ĐĂNG KÝ NGAY 
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+<!-- Giáo Viên -->
     <section class="teacher">
         <div> 
-            <h2>Giáo Viên </h2>
+            <h2>Giáo Viên</h2>
         </div>
-        <div class="form">  
-            <div><p>ĐĂNG KÝ NHẬN TƯ VẤN</p></div>
-            <form action="#" method="POST"></form>   
-                <label> Họ & Tên </label>
-                <input type="text" name="name"><br>
-                <label> Tuổi </label> 
-                <input type="text" name="ten"><br>
-                <label > Email - SĐT</label>
-                <input type="text" name="phone"><br>
-                <input type="submit" name="submit" value="Send"/>
+        <div class="teacher-img">
+            <div>
+                <img src="test/gv2.jpg" alt="">
+                <div class="info">
+                    <p>Info</p>
+                    <p>D.O.B</p>
+                </div>
             </div>
-        <div>
-            <img src="" alt="">
+            <div>
+                <img src="test/gv3.jpg" alt="">
+                <div class="info">
+                    <p>Info</p>
+                    <p>D.O.B</p>
+                </div>
+            </div>
+            <div>
+                <img src="test/gv5.jpg" alt="">
+                <div class="info">
+                    <p>Info</p>
+                    <p>D.O.B</p>
+                </div>
+            </div>
+            <div>
+                <img src="test/gv6.jpg" alt="">
+                <div class="info">
+                    <p>Info</p>
+                    <p>D.O.B</p>
+                </div>
+            </div>
+            <div>
+                <img src="test/gv7.jpg" alt="">
+                <div class="info">
+                    <p>Info</p>
+                    <p>D.O.B</p>
+                </div>
+            </div> 
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="teacher-text">
+            <p>Nếu bạn đam mê yoga, đánh giá cao lợi ích sức khỏe của nó và muốn chia sẻ những lợi ích này với người khác, thì bạn có thể là ứng cử viên hoàn hảo cho việc dạy yoga. Bằng cách được chứng nhận và trở thành một giáo viên hiệu quả, bạn sẽ có thể biến niềm đam mê yoga của mình thành một nghề nghiệp bổ ích!</p>
         </div>
-        <div>
-            <img src="" alt="">
-        </div>
+           
     </section>
-      
-    <section class="timetable">
- <div> 
+<!-- Thời khoá biểu  -->
+    <section class="time">
+        <div> 
             <h2>Lịch Tập</h2> 
         </div>
-        <div></div>
+        <div class="time-img">
+           <img src="test/timetable.jpg" alt="">
+        </div>
     </section>
-       
 </main>
 
-<footer>
-
+<footer class="footer">
+    <div class="footer-left"> 
+        <h3> Thông tin liên hệ</h3>
+        <p> Cơ sở 1: Phạm Ngọc Thạch </p>
+        <p> Cơ sở 2: Vũ Phạm Hàm</p>
+        <p> Giờ mở cửa: 7h - 21h các ngày trong tuần<p>
+        <p> Hotline: 098xxxxyzz</p>
+        <p> Email: Angelstudio@gmail.com </p>
+        <p> Website: ...... </p>
+    </div>
+    <div class="footer-right">
+        <h3> Đăng ký nhận Voucher giảm 50% </h3>
+        <p> Nhanh tay đăng ký để nhận được những ưu đãi hấp dẫn đến từ ANGEL STUDIO </p>
+    </div>   
+    <!-- Chưa chỉnh sửa đc kích thước điền form -->
+    <div class="container-footer"> 
+        <div class="input-footer">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="btn-box__footer">
+        <button type="submit">
+                ĐĂNG KÝ NGAY 
+        </button>
+        </div>
+    </div>
+        
 </footer>
+
