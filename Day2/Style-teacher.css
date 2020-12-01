@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-background {
+    background-image: url(test/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     
+  }
+  .nav-logo {
+    text-align: center;
+  }
+  
+  .nav-logo img {
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 5px;
+    text-align: center;
+    border: 3px solid white;
+  }
+  
+  .nav-list ul {
+    text-align: center;
+    background-color: #6190E8;
+    padding: 10px;
+  
+  }
+  
+  .nav-list li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    /* font-family: ; */
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+  }
