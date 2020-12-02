@@ -35,6 +35,10 @@
   /* font-family: ; */
 }
 
+.nav-list a:hover {
+  color: rgb(24, 47, 255);
+}
+
 .nav-list a {
   text-decoration: none;
   color: white;
