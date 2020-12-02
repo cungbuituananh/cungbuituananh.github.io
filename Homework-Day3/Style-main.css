@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont-menu {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  background-color: brown;
+  height: 50px;
+}
+
+ul {
+  display: block;
+  background-color: yellow;
+}
+li {
+  display: inline-block;
+  clear: both;
+  text-align: center;
+}
