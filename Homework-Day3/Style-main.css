@@ -2,37 +2,192 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
-.menu {
-  background-color: chocolate;
+/* menu2 */
+/*  width: 100px;
+    height: 110px;
+    padding: 40px 10px; */
+
+nav {
+  width: 100%;
 }
-
-.wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
-  background-color: cornsilk;
-
+ul {
+  padding: 0px;
+  margin: 0 0 0 800px;
+  list-style: none;
 }
-.logo{
-  max-width: 30%;
-  background-color: cornflowerblue;
-
+li {
+    display: inline;
+    padding-left: 20px;
 }
 .logo img {
-  border-radius: 50%;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 50px;
   height: 100px;
+  border-radius: 50%;
+} 
+nav a {
+    display: inline-block;
+    height: 110px;
+    padding-top: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: black;
 }
 
-.navbar {
-  max-width: 60%;
-  background-color: darkgreen;
+nav a:hover {
+  color: red;
 }
+.banner img {
+  vertical-align: center;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  padding-top: 2px;
+
+
+}
+.banner {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid black;
+}
+
+.container-intro h2 p {
+  color: red;
+} 
+
+.container-intro, .content1 {
+  max-width: 80% ;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrap-intro {
+  padding: 30px 0px;
+}
+.intro-content, .btn-intro {
+  text-align: center;
   
-.navbar li {
-  display: inline
+}
+.intro-header h2 p, .cont2-header h2 p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #17aa9d;
+  font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  
+}
+.intro-header span, .cont2-header span {
+  font-size: 40px;
+  font-weight: 100;
+  color: red;
+  font-family: 'Gotham XNarrow SSm A', 'Gotham XNarrow SSm B', Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
 
+.intro-text, .cont1-content {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.intro-text span { 
+  color: #17aa9d;
+  font-weight: bold;
+}
+
+button {
+  padding: 20px;
+  background-color: black;
+  border-radius: 15px;
+  font-size: 13px;
+  letter-spacing: 2px;
   
 }
 
+.btn-intro a {
+  text-decoration: none;
+  color: white;
+}
+
+.cont1 {
+  background-color: rgb(223, 217, 217)
+}
+
+.content1 {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  
+}
+
+.cont1-content {
+  display: block;
+}
+
+.content1 h2 p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #17aa9d;
+  font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.cont1-ask {
+  padding-top: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.cont1-ask p a {
+  display: inline-block;
+  border-bottom: 1px solid rgb(90, 89, 89);
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: rgb(90, 89, 89);
+}
+
+.cont1-text span {
+  color: rgb(167, 214, 96)
+}
+
+
+.cont2-content {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  max-width: 50%;
+  height: 500px;
+  background-color: greenyellow;
+}
+
+.cont2-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.cont2-img img {
+  height: 500px;
+  max-width: 50%;
+}
+
+.cont2-wrap {
+  padding-top: 250px;
+}
+.cont2 {
+  max-width: 100%;
+}
