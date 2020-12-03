@@ -5,13 +5,16 @@
 }
 
 .menu {
+  background-color: chocolate;
+}
+
+.wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
   background-color: cornsilk;
-  display: inline-block;
-}
 
+}
 .logo{
   max-width: 30%;
   background-color: cornflowerblue;
