@@ -133,22 +133,23 @@ button {
 }
 
 .content1 h2 p {
+  padding-top: 40px;
+  padding-bottom: 20px;
   font-size: 16px;
   font-weight: 700;
   color: #17aa9d;
   font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
   padding-bottom: 10px;
   letter-spacing: 2px;
-  padding-top: 40px;
-  padding-bottom: 20px;
+
 }
 
 .cont1-ask {
   padding-top: 50px;
+  padding-bottom: 50px;
   font-size: 16px;
   font-weight: 700;
   font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
-  padding-bottom: 10px;
   letter-spacing: 1px;
 }
 
@@ -164,8 +165,7 @@ button {
   color: rgb(167, 214, 96)
 }
 
-
-.cont2-content {
+/* .cont2-content {
   display: block;
   text-align: center;
   margin-top: 40px;
@@ -174,12 +174,6 @@ button {
   background-color: greenyellow;
 }
 
-.cont2-text {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 25px;
-  margin-bottom: 30px;
-}
 .cont2-img img {
   height: 500px;
   max-width: 50%;
@@ -190,4 +184,41 @@ button {
 }
 .cont2 {
   max-width: 100%;
+}
+ */
+ img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.wrapper {
+ margin-left: -5px;
+ margin-right: -5px; 
+ text-align: center;
+}
+
+.item-wrapper {
+  display: inline-block;
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: auto;
+  vertical-align: middle;
+  /* background-color: grey; */
+}
+
+.cont2 {
+  padding-bottom: 30px
+}
+
+.cont2-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 25px;
 }
