@@ -52,31 +52,26 @@
 
 .drop-side1 {
     background-color: yellow;
-    display: block;
     position: absolute;
     width: 250px;
     height: 350px;
     right: -250px;
     top: -5px;
-    display: block; 
     opacity: 0;
     /* transition: opacity 0.5s;   */
 }
 .drop-side2 {
     background-color: yellow;
-    display: block;
     position: absolute;
     width: 250px;
     height: 350px;
     right: -250px;
     top: -33px;
-    display: block; 
     opacity: 0;
     /* transition: opacity 0.5s;   */
 }
 .drop-side3 {
     background-color: yellow;
-    display: block;
     position: absolute;
     width: 250px;
     height: 350px;
