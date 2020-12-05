@@ -1,50 +1,58 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .container-logo {
     width: 1200px;
-    background-color: thistle;
+    height: 70px;
     margin: auto;
+    position: relative;
 }
 
 .logo img {
     height: 50px;
+    position: relative;
+    top: 10px
 }
 .container-menu-banner {
     width: 100%;
-    background-color: rgb(77, 59, 77);
+    background-color: rgb(4, 16, 51)
 }
 .cont-menu-banner {
     width: 1200px;
     height: 350px;
-    background-color: wheat;
+    
     margin: auto;
   
 }
 .cont-menu ul li {
     list-style-type: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
    
 }
 .main-menu {
-    width: 250px;
+    width: 200px;
     height: 350px;
-    background-color: tomato;
+    background-color: rgb(249, 249, 249);
     display: block;
     position: relative;
     z-index: 2;
 }
 .menu-item {
-    padding: 3px;
+    padding: 6px;
+    top:10px;
     position: relative;
-    top:5px;
     text-decoration: none;
 }
 #menu-item1:hover .drop-side1, #menu-item2:hover .drop-side2 {
     display: block;
     opacity: 1;
     box-shadow: 0 0 2px black;
+    
 }
 
 .menu-link {
@@ -53,39 +61,39 @@
 }
 
 .drop-side1 {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    width: 250px;
+    width: 200px;
     height: 350px;
-    right: -250px;
-    top: -5px;
+    right: -201px;
+    top: -10px;
     opacity: 0;
     /* transition: opacity 0.5s;   */
 }
 .drop-side2 {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    width: 250px;
+    width: 200px;
     height: 350px;
-    right: -250px;
-    top: -33px;
+    right: -201px;
+    top: -37px;
     opacity: 0;
     /* transition: opacity 0.5s;   */
 }
 .drop-side3 {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    width: 250px;
+    width: 200px;
     height: 350px;
-    right: -250px;
-    top: -61px;
+    right: -201px;
+    top: -64px;
     opacity: 0;
     /* transition: opacity 0.5s;   */
 }
 
 .sub-menu1, .sub-menu2, .sub-menu3 {
-    padding: 3.2px;
-    top: 5px;
+    padding: 6px;
+    top:10px;
     text-decoration: none;
 }
 
@@ -94,8 +102,8 @@
     position: absolute;
     width: 970px;
     height: 350px;
-    top: 54px;
-    left: 248px;
+    top: 70px;
+    left:470px;
     z-index: 1;
 }
 
