@@ -7,24 +7,4 @@
 .container {
     width: 400px;
     margin: auto;
-
-}
-
-.fullname, .mobi-num, .password {
-    width: 100%;
-    height: 50px;
-}
-
-.firstname, .surname {
-    width: 50%;
-    float: left;
-}
-
-input {
-    font-size: 17px;
-    background: lemonchiffon;
-    padding: 10px 0px;
-    margin: 5px;
-    border: 1px solid rgb(219, 216, 216);
-    border-radius: 6px;
 }
