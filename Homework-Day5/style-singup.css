@@ -18,8 +18,15 @@ input, select {
     border-radius: 6px;
 }
 
-
-#firstname, #surname {
-    width: 50%;
-    float: left;
+.select-birth {
+    width: 32%;
+}
+.password, .mobi-num, .cont-sex, .birthday  {
+    margin-top: 6px;
+}
+.cont-sex {
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    width: 120px;
+    display: inline-block;
 }
