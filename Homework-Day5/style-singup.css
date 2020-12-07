@@ -19,10 +19,9 @@
     width: 50%;
     float: left;
     margin-bottom: 6px;
-    display: inline;
+    display: inline-block;
     padding:0 6px;
-}
-
+} 
 input, select {
     font-size: 17px;
     padding: 14px 16px;
