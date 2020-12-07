@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container" >
+        <!-- First & Surname -->
         <div class="fullname">
             <div class="firstname">
                 <input type="text" placeholder="firstname">
@@ -16,12 +17,15 @@
                 <input type="text" placeholder="surname">
             </div>
         </div>
+        <!-- Mobile Number -->
         <div class="mobi-num">
             <input type="text" placeholder="Mobile number or email address ">
         </div>
+        <!-- Password -->
         <div class="password">
             <input type="password" placeholder="password">
         </div>
+        <!-- D.O.B -->
         <div>
             <select aria-label="Day" name="birthday-day" id="">
                 <option value="1">1</option>
@@ -72,11 +76,35 @@
                 <option value="11">Nov</option>
                 <option value="12">Dec</option>
             </select>
+            <select aria-label="Year" name="birthday-year" id="">
+                <option value="1">1999</option>
+                <option value="2">2000</option>
+                <option value="3">2001</option>
+                <option value="4">2002</option>
+                <option value="5">2003</option>
+                <option value="6">2004</option>
+                <option value="7">2005</option>
+                <option value="8">2006</option>
+                <option value="9">2007</option>
+                <option value="10">2008</option>
+                <option value="11">2009</option>
+                <option value="12">2010</option>
+            </select>
+        </div>
+        <!-- Gender -->
+        <div class="female">
+            <label for="female"> Female</label>
+            <input id="female" type="radio" name="sex">
+        </div>
+        <div class="female">
+            <label for="male"> Male</label>
+            <input id="male" type="radio" name="sex">
+        </div>
+        <div class="custom">
+            <label for="custom"> Custom </label>
+            <input id="custom" type="radio" name="sex">
         </div>
         
-        <div></div>
-        <div></div>
-        <div></div>
     </div>
 </body>
 </html>
