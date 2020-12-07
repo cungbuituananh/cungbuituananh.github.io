@@ -33,18 +33,23 @@ input, select {
 
 .select-birth {
     width: 33.33%;
+    margin: -2px;
 }
 .password, .mobi-num, .cont-sex, .birthday  {
     margin-top: 6px;
 }
-.gender {
-    width: 33.33%;
-}
+
 .cont-sex {
     background-color: rgb(255, 255, 255);
     border-radius: 6px;
-    width: 120px;
+    width: 33.33%;
+    height: 50px;
+    margin-left: -3px ;
     display: inline-block;
+}
+
+.slt, .opt {
+    margin-top: 6px;
 }
 
 
