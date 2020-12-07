@@ -10,6 +10,18 @@
     background-color: lightcoral;
 }
 
+.fullname {
+    width: 100% ;
+}
+
+.sub-name {
+    width: 50%;
+    float: left;
+    margin-bottom: 6px;
+    display: inline;
+    padding:0 6px;
+}
+
 input, select {
     font-size: 17px;
     padding: 14px 16px;
@@ -19,10 +31,13 @@ input, select {
 }
 
 .select-birth {
-    width: 32%;
+    width: 33.33%;
 }
 .password, .mobi-num, .cont-sex, .birthday  {
     margin-top: 6px;
+}
+.gender {
+    width: 33.33%;
 }
 .cont-sex {
     background-color: rgb(255, 255, 255);
@@ -30,3 +45,7 @@ input, select {
     width: 120px;
     display: inline-block;
 }
+
+.pronoun div {
+} 
+
