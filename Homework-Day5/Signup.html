@@ -10,12 +10,15 @@
     <div class="container">
       <!-- First & Surname -->
       <div class="fullname">
-        <div class="sub-name">
-          <input id="firstname" type="text" placeholder="firstname" />
-        </div>
-        <div class="sub-name">
-          <input id="surname" type="text" placeholder="surname" />
-        </div>
+          <div class="wrapper">
+            <div class="sub-name">
+                <input id="firstname" type="text" placeholder="First name" />
+              </div>
+              <div class="sub-name">
+                <input id="surname" type="text" placeholder="Surname" />
+              </div>
+          </div>
+      
       </div>
       <!-- Mobile Number -->
       <div class="mobi-num">
@@ -23,11 +26,12 @@
       </div>
       <!-- Password -->
       <div class="password">
-        <input type="password" placeholder="password" />
+        <input type="password" placeholder="New password" />
       </div>
       <!-- D.O.B -->
       <div class="birthday">
           <p>Date of birthd</p>
+        <div class="wrapper-birth">
         <select class="select-birth" aria-label="Day" name="birthday-day" >
           <option value="1">1</option>
           <option value="1">2</option>
@@ -90,44 +94,48 @@
           <option value="11">2009</option>
           <option value="12">2010</option>
         </select>
+        </div>
+       
       </div>
       <!-- Gender -->
       <div class="gender">
         <p>Gender</p>
-        <div class="cont-sex">
-            <label for="female"> Female</label>
-            <input id="female" type="radio" name="sex" />
+        <div class="wrapper-gender">
+            <div class="cont-sex">
+                <label for="female"> Female</label>
+                <input id="female" type="radio" name="sex" />
+            </div>
+            <div class="cont-sex">
+                <label for="male"> Male</label>
+                <input id="male" type="radio" name="sex" />
+            </div>
+            <div class="cont-sex">
+                <label for="custom"> Custom </label>
+                <input id="custom" type="radio" name="sex" />
+            </div>
         </div>
-        <div class="cont-sex">
-            <label for="male"> Male</label>
-            <input id="male" type="radio" name="sex" />
+       <!-- Custom Gender -->
+        <div id="A" class="pronoun">
+            <div class="slt">
+                <select name="pronoun" id="pronoun" aria-placeholder="Select your pronoun">
+                    <option value="pronoun-select" selected="1">
+                        Select your pronoun
+                    </option>  
+                    <option value="pronoun-he">
+                        He: " Wish him a happy birthday!"
+                    </option>
+                    <option value="pronoun-he">
+                        She: " Wish her a happy birthday!"
+                    </option>
+                    <option value="pronoun-he">
+                        They: " Wish them a happy birthday!"
+                    </option>
+                </select>
+            </div>
+            <div class="opt">
+                <p>Your pronoun is visible to everone</p>
+                <input type="text" name="gender-optional" placeholder="Gender (Optional)">
+            </div>
         </div>
-        <div class="cont-sex">
-            <label for="custom"> Custom </label>
-            <input id="custom" type="radio" name="sex" />
-        </div>
-      </div>
-      <div class="pronoun">
-        <div class="slt">
-            <select name="pronoun" id="pronoun" aria-placeholder="Select your pronoun">
-                <option value="pronoun-select" selected="1">
-                    Select your pronoun
-                </option>  
-                <option value="pronoun-he">
-                      He: " Wish him a happy birthday!"
-                  </option>
-                  <option value="pronoun-he">
-                    She: " Wish her a happy birthday!"
-                </option>
-                <option value="pronoun-he">
-                    They: " Wish them a happy birthday!"
-                </option>
-              </select>
-        </div>
-        <div class="opt">
-            <p>Your pronoun is visible to everone</p>
-            <input type="text" name="gender-optional" placeholder="Gender (Optional)">
-      </div>
-    </div>
   </body>
 </html>
