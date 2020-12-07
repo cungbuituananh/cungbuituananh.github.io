@@ -26,8 +26,9 @@
         <input type="password" placeholder="password" />
       </div>
       <!-- D.O.B -->
-      <div>
-        <select aria-label="Day" name="birthday-day" id="">
+      <div class="birthday">
+          <p>Date of birthd</p>
+        <select class="select-birth" aria-label="Day" name="birthday-day" >
           <option value="1">1</option>
           <option value="1">2</option>
           <option value="1">3</option>
@@ -61,7 +62,7 @@
           <option value="1">31</option>
           <option value="1">1</option>
         </select>
-        <select aria-label="Month" name="birthday-month" id="">
+        <select class="select-birth"  aria-label="Month" name="birthday-month" >
           <option value="1">Jan</option>
           <option value="2">Feb</option>
           <option value="3">Mar</option>
@@ -75,7 +76,7 @@
           <option value="11">Nov</option>
           <option value="12">Dec</option>
         </select>
-        <select aria-label="Year" name="birthday-year" id="">
+        <select class="select-birth" aria-label="Year" name="birthday-year" i>
           <option value="1">1999</option>
           <option value="2">2000</option>
           <option value="3">2001</option>
@@ -91,16 +92,17 @@
         </select>
       </div>
       <!-- Gender -->
-      <div>
-        <div class="female">
+      <div class="gender">
+            <p>Gender</p>
+        <div class="cont-sex">
             <label for="female"> Female</label>
             <input id="female" type="radio" name="sex" />
           </div>
-          <div class="female">
+          <div class="cont-sex">
             <label for="male"> Male</label>
             <input id="male" type="radio" name="sex" />
           </div>
-          <div class="custom">
+          <div class="cont-sex">
             <label for="custom"> Custom </label>
             <input id="custom" type="radio" name="sex" />
           </div>
