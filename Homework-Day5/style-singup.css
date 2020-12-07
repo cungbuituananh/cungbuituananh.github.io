@@ -7,20 +7,20 @@
 .container {
     width: 400px;
     margin: auto;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .fullname {
     width: 100% ;
-
 }
+
 
 .sub-name {
     width: 50%;
     float: left;
     margin-bottom: 6px;
     display: inline-block;
-    padding:0 6px;
+    padding:0 5px;
 } 
 input, select {
     font-size: 17px;
@@ -33,6 +33,7 @@ input, select {
 .select-birth {
     width: 33.33%;
     margin: -2px;
+    margin-bottom: 6px;
 }
 .password, .mobi-num, .cont-sex, .birthday  {
     margin-top: 6px;
@@ -41,14 +42,39 @@ input, select {
 .cont-sex {
     background-color: rgb(255, 255, 255);
     border-radius: 6px;
-    width: 33.33%;
+    width: 30.33%;
     height: 50px;
-    margin-left: -3px ;
+    padding: 6px;
     display: inline-block;
+    border: 1px solid rgb(219, 216, 216)
 }
 
+.wrapper-gender {
+    margin-left: 1px;
+    margin-right: -29px;
+    
+}
+.wrapper {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.wrapper-birth {
+    margin-left: 3px;
+}
 .slt, .opt {
     margin-top: 6px;
+}
+
+p {
+    font-size: 13px;
+    
+}
+
+#custom input:checked  div{
+    display: block;
+}
+.pronoun {
+    display: none;
 }
 
 
