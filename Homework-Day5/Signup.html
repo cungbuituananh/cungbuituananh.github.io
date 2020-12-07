@@ -10,10 +10,10 @@
     <div class="container">
       <!-- First & Surname -->
       <div class="fullname">
-        <div class="firstname">
+        <div class="sub-name">
           <input id="firstname" type="text" placeholder="firstname" />
         </div>
-        <div class="surname">
+        <div class="sub-name">
           <input id="surname" type="text" placeholder="surname" />
         </div>
       </div>
@@ -106,6 +106,28 @@
             <label for="custom"> Custom </label>
             <input id="custom" type="radio" name="sex" />
           </div>
+          <div class="pronoun">
+            <div class="slt">
+                <select name="pronoun" id="pronoun" aria-placeholder="Select your pronoun">
+                    <option value="pronoun-select" selected="1">
+                        Select your pronoun
+                    </option>  
+                    <option value="pronoun-he">
+                          He: " Wish him a happy birthday!"
+                      </option>
+                      <option value="pronoun-he">
+                        She: " Wish her a happy birthday!"
+                    </option>
+                    <option value="pronoun-he">
+                        They: " Wish them a happy birthday!"
+                    </option>
+                  </select>
+            </div>
+          
+                <input type="text" name="gender-optional" placeholder="Gender (Optional)">
+          
+          </div>
+         
       </div>
     </div>
   </body>
