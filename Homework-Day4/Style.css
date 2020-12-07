@@ -45,6 +45,7 @@
 .sub-menu {
   position: relative;
   width: 210px;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 3px rgb(170, 170, 170);
 }
