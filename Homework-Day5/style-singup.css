@@ -7,4 +7,13 @@
 .container {
     width: 400px;
     margin: auto;
+    background-color: lightcoral;
+}
+
+input, select {
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 100%;
+    border: 1px solid rgb(219, 216, 216);
+    border-radius: 6px;
 }
