@@ -1,0 +1,201 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 0 0px 5px black;
+    margin-top: 10px;
+  }
+
+.login-container {
+    padding-top: 10px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+input {
+    display: block;
+    width: 100%;
+    line-height: 46px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #eeeff1;
+    padding: 0px 05px ;
+  }
+
+
+  input[type="submit"] {
+    background-color: #1877f2;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 46px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+.forget {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    
+}
+a {
+    color: rgb(10, 86, 179);
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+#signup-label {
+    display: block;
+    width: 200px;
+margin: auto;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.signup-form {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  padding-top: 25px;
+}
+
+#signup, .signup-form, #custom, .opt  {
+    display: none;
+}
+/*  .signup-form */
+#signup:checked + div, #custom:checked + div {
+    display: block;
+} 
+h3 {
+    font-size: 33px;
+}
+
+.signup-content {
+    background-color: transparent;
+    overflow: visible;
+    padding: 10px 16px;
+    width: 440px;
+    margin: 40px auto;
+    box-shadow: 0 0px 5px 0 rgba(8, 0, 0, 0.25);
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.form-text input[text], .form-text input[password] {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(103, 76, 76);
+}
+.form-text input {
+    padding-left: 10px;
+}
+.form-header img {
+ position: absolute;
+ top: 5px;
+ right: 5px;
+ width: 20px;
+ height: 20px;
+}
+
+.form-header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.form-name input[type="text"] {
+    width: 200px;
+    display: inline-block;
+
+}
+
+.form-name {
+    margin-top: 10px;
+    margin-left: 1px;
+}
+select {
+    border: 1px solid #e5e7e9;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #1c1e21;
+    font-size: 15px;
+    font-weight: normal;
+    height: 46px;
+    line-height: 20px;
+  }
+
+  .form-birth {
+    margin-left: -8px;
+    margin-right: -8px;
+    font-size: 0;
+  }
+  .form-birth div {
+    display: inline-block;
+    width: 33.33333%;
+    padding: 0 8px;
+    margin-top: 8px;
+
+  }
+  .form-birth select {
+    padding: 0 3px;
+    width: 100%;
+  }
+  
+
+  .form-gender {
+        width: 100%;
+        position: relative;
+        
+  }
+  
+  .cont-gender {
+      display: inline-block;
+      width: 32.6% ;
+      margin-top: 8px;
+      padding-left: 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(222, 219, 219);
+      height: 46px;
+  }
+
+  .cont-gender label {
+    position: absolute;
+    bottom: 18px;
+     
+  }  
+  .cont-gender input {
+     margin-left: 20px;
+     margin-top: 15px;
+  }
+  
+
+  .box {
+      background-color: rgb(232, 227, 232);
+  }
+
+  p.text-top  {
+   font-size: 13px;
+   margin-top: 10px;
+   color: rgb(96, 103, 112);
+  }
