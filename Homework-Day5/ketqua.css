@@ -1,0 +1,45 @@
+*{
+
+}
+
+table {
+        border: 4px solid #7e7e7e;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.4;
+        border-collapse: collapse;
+        color: #323232;
+        margin-left: auto;
+        margin-right: auto;
+}
+thead h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #900;
+  }
+td,th {
+  border: 1px solid #ccc;
+}
+.text {
+    font-size: 15px;
+}
+tr > td {
+    padding: 5px;
+  }
+  tr > td:hover {
+    background-color: #8af67a;
+  }
+
+  .bold {
+    font-weight: 700;
+    font-size: 25px;
+    color: red;
+  }
+  .Number {
+      font-size: 20px;
+      font-weight: bold;
+  }
