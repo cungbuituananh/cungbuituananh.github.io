@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Xu li container - wrapper */
+.navbar {
+    display:flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    margin-left: 100px;
+ }
+
+.container-about{
+    margin: auto;
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+ }  
+
+ .container-studio{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+ }  
+
+ #intro-studio  {
+    margin: auto;
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+ }
+
+ #menu li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+ }
+ #menu a {
+     text-decoration: none;
+     color: black;
+     padding: 5px;
+ }
+
+ #menu a:hover {
+     box-shadow: 0 0 10px rgb(75, 74, 74);
+     color: whitesmoke;
+     background-color: rgba(0, 0, 0);
+     border-radius: 20px;
+     font-weight: 500;
+     cursor: pointer;
+ }
+ 
+ .banner {
+     width: 100%;
+    position: relative;
+ }
+ .banner img {
+     width: 100%;
+     height: 500px;
+    display: block;
+    object-fit: cover;
+ }
+
+ .wrapper {
+    width: 50%;
+    position: relative;
+ }
+
+ /* Xu li anh */
+
+ #logo img  {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 5px;
+     
+ }
+
+ .about-img  {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+.about-img2  {
+    width: 100%;
+    height: 400px;
+    padding-top: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.logo-footer img {
+    width: 90px;
+    position: absolute;
+    top:  5px;
+    left: 250px;
+    border-radius: 50%;
+} 
+
+#studio-img {
+    width: 700px;
+    display: block;
+}
+
+.studio-img {
+    width: 500px;
+}
+
+/* xu li text */
+ .front-text {
+     position: absolute;
+     background-color: rgba(40, 94, 219, 0.6);
+     top: 0;
+     height: 400px;
+     padding: 100px 30px;
+     text-align: center;
+ }
+ .front-text h3 {
+     letter-spacing: 3px;
+     color: white;
+ }
+ .front-text p {
+     font-size: 15px;
+     line-height: 22px;
+     margin: 30px 0px;
+     color: white;
+ }
+ .wrapper-text span {
+    font-size: 17px;
+    font-weight: 600;
+    color: grey;
+    border-bottom: 2px solid rgb(255, 55, 0);
+    display: inline-block;
+    padding-bottom: 5px ;
+}
+
+.wrapper-text h3 {
+   font-size: 45px;
+   font-weight: 300;
+   margin: 10px 0 ;
+}
+
+.container-studio h2, .container-about h2 {
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+    margin: 10px 0px;
+}
+
+.container-studio p 
+    {
+        margin: 25px 0px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+.studio-text p {
+        margin-right: 20px;
+        margin-top: 40px;
+        line-height: 20px;
+       }
+   
+.studio-text1  {
+      padding-left: 60px;
+      }
+.studio-text1 p {
+    margin-top: 40px;
+}
+   
+/* Xu ly  khac */
+#line {
+    width: 50px;
+    border-bottom: 3px solid rgb(148, 87, 239);
+}
+ .front-text button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 0;
+    font-weight: 500;
+    font-size: 17px;
+    box-shadow: 0 0 5px black;
+ }
+ .front-text button:hover {
+     color: rgb(22, 99, 10);
+     cursor: pointer ;
+ }
+
+ .wrapper-text {
+     margin-left: 50px;
+ }
+
+
+
+.footer {
+    background-color: rgb(54, 51, 49);
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.icon-footer {
+    position: absolute;
+    top: 25px;
+    left: 550px;
+    bottom: 0px
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 50%;
+  
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  #li-2, #li-1 {
+    box-shadow: 0 0 10px rgb(132, 131, 131);
+    background-color: rgb(215, 215, 215, 0.5);
+    border-radius: 20px;
+    font-weight: 500;
+  }
