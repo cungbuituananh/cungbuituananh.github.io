@@ -23,6 +23,12 @@
     align-items: center;
  }  
 
+ #header-course{
+    display: flex;
+    width: 1000px;
+    justify-content: start;
+ }  
+
  .container-studio{
     margin: auto;
     display: flex;
@@ -117,7 +123,13 @@
 
 .studio-img {
     width: 500px;
-    display: block;
+  display: block;
+}
+
+.course-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 
 /* xu li text */
@@ -154,7 +166,7 @@
    margin: 10px 0 ;
 }
 
-.container-studio h2, .container-about h2 {
+.container-studio h2, .container-about h2, h2 {
     font-family: 'Courgette', cursive;
     font-size: 50px;
     margin: 10px 0px;
@@ -179,13 +191,28 @@
 .studio-text1 p {
     margin-top: 40px;
 }
+.course-text-left {
+    margin-left: 20px;
+}
+.course-text-right {
+    margin-right: 20px;
+}
+.course-text-left  p, .course-text-right p {
+    margin: 25px 0px;
+    line-height: 20px;
+}
+.course-text-left h3, .course-text-right h3 {
+    font-family: 'Courgette', cursive;
+    font-size: 25px; 
+} 
    
 /* Xu ly  khac */
 #line {
     width: 50px;
     border-bottom: 3px solid rgb(148, 87, 239);
 }
- .front-text button {
+/* Button */
+.btn-intro {
     padding: 10px 30px;
     border-radius: 30px;
     border: 0;
@@ -193,8 +220,21 @@
     font-size: 17px;
     box-shadow: 0 0 5px black;
  }
- .front-text button:hover {
-     color: rgb(22, 99, 10);
+ .btn-course {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 0;
+    font-weight: 500;
+    font-size: 17px;
+    box-shadow: 0 0 5px black;
+    background-color: teal;
+    color: white;
+
+ }
+
+.btn-intro:hover, .btn-course:hover {
+     color: rgb(9, 45, 4);
+     background-color: rgb(237, 237, 188);
      cursor: pointer ;
  }
 
@@ -249,7 +289,7 @@
     color: white;
   }
 
-  #li-2, #li-1 {
+  #li-2, #li-1, .li {
     box-shadow: 0 0 10px rgb(132, 131, 131);
     background-color: rgb(215, 215, 215, 0.5);
     border-radius: 20px;
