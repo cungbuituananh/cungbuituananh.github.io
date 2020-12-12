@@ -41,6 +41,7 @@ img {
     display: flex;
     margin-left: -20px;
     margin-right: -20px;
+    margin-bottom: 10px;
 }
 
 .flex {
@@ -202,8 +203,8 @@ header {
     text-align: center;
 }
 .header-content h2 {
+    font-family: 'Ranchers', cursive;
     font-size: 40px;
-    text-shadow: 0 0 10px rgb(148, 211, 229);
 }
 .poster-header {
     font-family: 'Montserrat', sans-serif;
@@ -228,12 +229,17 @@ header {
     margin-bottom: 2.0rem;
     margin-top: 1rem;
 }
-.author {
+.author, .layout {
     background-color: #A7BFE8;
     box-shadow: 0 0 10px rgb(90, 90, 70);
     border-radius: 20px 5px;
     padding: 10px;
-    position: sticky;
+    /* position: sticky; */
+}
+
+.layout {
+    background-color: rgb(203, 241, 224);
+    border-radius: 5px 20px;
 }
 .author-img {
     width: 150px;
@@ -249,24 +255,43 @@ header {
     
 }
 /* fish */
-.fishes h2 {
+.layout h3 {
+    text-align: center;
+}
+.layout-img {
+    margin-bottom: 10px;
+}
+.title h2 {
     text-align: center;
     margin-bottom: 15px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
+    color: rgb(5, 19, 32);
 }
-.wrapper-fish {
+.wrapper-item {
+    box-shadow: 0 0 10px black;
     background-color: #fffcdc;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 .fish-img {
+    
     text-align: center;
     padding: 10px 0;
 }
-
-.fishes {
-    box-shadow: 0 0 10px 5px black;
+.fish-img img {
+    padding: 0 10px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.fish-img:hover {
+    transform: scale(1.2);
+}
+.title {
+  
     animation-name: example;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -281,6 +306,34 @@ header {
  
   }
 
+.footer {
+    background-color: rgb(254, 254, 254);
+}
+.wrapper-social {
+    text-align: center;
+}
+.social {
+    text-align: center;
+}
 
-
-  
+.fa-youtube {
+    color:red;
+}
+.fa-instagram-square {
+    color: #e4405f;
+}
+.fa-twitter {
+    color: #55acee;
+}
+.fa-facebook {
+    color: #3b5999;
+}
+i {
+    font-size: 50px;
+}
+footer {
+    background-image: url(https://previews.123rf.com/images/z0w/z0w1709/z0w170900086/86440787-under-blue-clear-sea-ocean-floor-3d-render-.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
