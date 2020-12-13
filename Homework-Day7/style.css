@@ -309,6 +309,9 @@ header {
 .footer {
     background-color: rgb(254, 254, 254);
 }
+.footer h2 {
+    font-family: 'Ranchers', cursive;
+}
 .wrapper-social {
     text-align: center;
 }
