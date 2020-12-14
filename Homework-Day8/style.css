@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body  {
+    background-color: cornsilk;
+}
+footer {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container-600 {
+    width: 600px;
+    margin: auto;
+}
+.container-600 p {
+    font-size: 22px;
+    margin: 50px 0px;
+    font-weight: 200;
+}
+.logo {
+   padding: 25px;
+   position: relative;
+}
+.logo-img {
+    width: 35px;
+}
+.logo-text {
+    height: 25px;
+}
+ul,li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black
+}
+.logo-text {
+    margin-left: 15px;
+}
+.download-top {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 7px 15px;
+    font-size: 18px;
+    top: 25px;
+    right: 25px;
+    font-weight: bold;
+    /* font-family: 'Noto Sans JP', sans-serif;  */
+}
+.intro {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    border-bottom: 2px dashed black;
+    /* background-color: rgb(200, 200, 251); */
+}
+.content {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    /* background-color: rgb(113, 180, 158); */
+    align-items: center;
+}
+
+.intro img {
+    width: 800px;
+}
+
+.intro-content h1 {
+    font-size: 45px;
+    font-family: 'PT Serif Caption', serif;
+    line-height: 50px;
+    margin-top: 26px;
+}
+.intro-content p {
+    margin: 26px 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.intro-btn {
+    display: flex;
+} 
+.intro-btn a {
+    margin: auto 25px;
+}
+#apple-icon {
+    margin-top: -4px; 
+    margin-right: 10px;
+}
+#play-icon {
+    margin-right: 10px;
+}
+.download {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-weight: 700;
+    justify-content: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.download:hover {
+    background-color: #FF2b2b81;
+}
+.video {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    padding: 10px 20px;
+    justify-content: center;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.content h3, .partner h3 {
+    font-family: 'PT Serif Caption', serif;
+    font-size: 25px;
+}
+.content p, .partner p {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 26px 0px;
+}
+.partner {
+    padding: 20px;
+}
+.menu-bottom {
+    margin-left: 48px;
+}
+.menu-bottom a {
+    margin: auto 25px;
+    font-weight: 500;
+}
