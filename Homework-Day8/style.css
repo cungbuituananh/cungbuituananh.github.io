@@ -9,6 +9,7 @@ body  {
 }
 footer {
     margin-top: 100px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-left: auto;
     display: flex;
@@ -19,11 +20,43 @@ footer {
     width: 600px;
     margin: auto;
 }
-.container-600 p {
-    font-size: 22px;
-    margin: 50px 0px;
-    font-weight: 200;
+.container-900 {
+    width: 900px;
+    margin: auto;
 }
+.container-600 p {
+    margin: 26px 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container-600 ul {
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container-600 li {
+    margin-left: 22px; 
+    margin-bottom: 1.5rem;
+}
+.container-600 h1 {
+    font-size: 45px;
+    font-family: 'PT Serif Caption', serif;
+    line-height: 50px;
+    margin-top: 26px;
+}
+.container-600 h3 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'PT Serif Caption', serif;
+}
+.container-900 img {
+    margin-top: 50px;
+    width: 900px ;
+    transform: rotate(-1deg);
+    border: 2px solid black;
+}
+
 .logo {
    padding: 25px;
    position: relative;
@@ -34,13 +67,47 @@ footer {
 .logo-text {
     height: 25px;
 }
-ul,li, a {
-    list-style-type: none;
+a {
     text-decoration: none;
-    color: black
+    color: black;
 }
+.link {
+    /* text-decoration: underline; */
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
 .logo-text {
     margin-left: 15px;
+}
+.cardname {
+    display: flex;
+   align-items: flex-start;
+   width: 600px;
+   margin: auto;
+}
+.cardname img {
+    width: 100px;
+   height: auto;
+    margin-right: 25px;
+    transform: rotate(1deg);
+    border: 2px solid black;
+}
+.cardname p {
+    margin-bottom: 26px;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.cardname ul{
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    list-style-type: none;
+}
+.cardname li {
+    margin-top: 8px;
+    margin-bottom: 33px;
 }
 .download-top {
     position: absolute;
@@ -51,7 +118,7 @@ ul,li, a {
     top: 25px;
     right: 25px;
     font-weight: bold;
-    /* font-family: 'Noto Sans JP', sans-serif;  */
+    font-family: 'Noto Sans JP', sans-serif; 
 }
 .intro {
     width: 800px;
@@ -61,6 +128,10 @@ ul,li, a {
     border-bottom: 2px dashed black;
     /* background-color: rgb(200, 200, 251); */
 }
+.intro-btn {
+    margin-top: 50px;
+}
+
 .content {
     width: 900px;
     margin: auto;
@@ -68,22 +139,17 @@ ul,li, a {
     /* background-color: rgb(113, 180, 158); */
     align-items: center;
 }
-
+.content h3, .partner h3 {
+    font-family: 'PT Serif Caption', serif;
+    font-size: 25px;
+}
+.content p, .partner p {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 26px 0px;
+}
 .intro img {
     width: 800px;
-}
-
-.intro-content h1 {
-    font-size: 45px;
-    font-family: 'PT Serif Caption', serif;
-    line-height: 50px;
-    margin-top: 26px;
-}
-.intro-content p {
-    margin: 26px 0;
-    font-size: 22px;
-    font-weight: 200;
-    line-height: 30px;
 }
 
 .intro-btn {
@@ -109,6 +175,7 @@ ul,li, a {
     font-weight: 700;
     justify-content: center;
     font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
 }
 .download:hover {
     background-color: #FF2b2b81;
@@ -124,15 +191,7 @@ ul,li, a {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.content h3, .partner h3 {
-    font-family: 'PT Serif Caption', serif;
-    font-size: 25px;
-}
-.content p, .partner p {
-    font-weight: 300;
-    font-size: 18px;
-    margin: 26px 0px;
-}
+
 .partner {
     padding: 20px;
 }
@@ -142,4 +201,66 @@ ul,li, a {
 .menu-bottom a {
     margin: auto 25px;
     font-weight: 500;
+}
+
+/* form */
+.form  {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(176, 64, 23, 0.285);
+}
+.form-content{
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: 50px auto;
+    padding: 25px;
+    border: 2px solid black;
+    box-shadow: 10px 10px  black;
+
+}
+.form-content h2 {
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;   
+}
+p.form-content {
+    font-size: 22px;
+    margin: 26px 0;
+
+}
+p.form-footer  {
+    font-weight: 80%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"] {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 120%;
+    padding: 3px 10px;
+    font-weight: bold;
+}
+
+.form {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input:checked + div {
+    display: block;
 }
