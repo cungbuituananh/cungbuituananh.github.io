@@ -6,28 +6,28 @@
 // console.log("Chu vi bằng:", (r+d)*2, "m");
 // console.log("Diện tích bằng:", r * d, "m2");
 
-// Viết chương trình cho phép nhập vào bán kính hình tròn, tính và in ra chu vi, diện tích của hình tròn:
+// 2.Viết chương trình cho phép nhập vào bán kính hình tròn, tính và in ra chu vi, diện tích của hình tròn:
 // let r = +prompt("Nhập bán kính R nhé:");
 // console.log("Diện tích S bằng:", (r**2)*3.14, "m2");
 // console.log("Chu vi C bằng:", 2*r*3.14, "m" );
 
-// Viết chương trình cho phép nhập vào hệ số a, b của phương trình bậc nhất ax + b = 0, tính và in ra nghiệm của phương trình
-// let a = +prompt("Tìm 'X' với aX+b=0. Nhập a nào" );
-// let b = +prompt("Tìm 'X' với aX+b=0. Nhập nốt b" );
-// console.log("X= -b/a ",-b/a);
+// 3.Viết chương trình cho phép nhập vào hệ số a, b của phương trình bậc nhất ax + b = 0, tính và in ra nghiệm của phương trình
+// let a = +prompt("Tìm 'X' với aX+b=0. Nhập a " );
+// let b = +prompt("Tìm 'X' với aX+b=0. Nhập b" );
+// console.log("X=",-b/a);
 
-// Viết chương trình cho phép nhập vào một số là đơn vị cm, tính và in ra giá trị tương ứng ở các đơn vị mm, m, km
+// 4.Viết chương trình cho phép nhập vào một số là đơn vị cm, tính và in ra giá trị tương ứng ở các đơn vị mm, m, km
 // let cm = +prompt("Nhập số đổi đơn vị- centimet:");
-//  console.log("kilomet", cm/1000000,"km"); 
-// console.log("met nhé", cm/1000,"m"); 
-//  console.log("milimet", cm*10,"mm"); 
+//     console.log("kilomet:", cm/1000000,"km"); 
+//     console.log("met:", cm/1000,"m"); 
+//     console.log("milimet:", cm*10,"mm"); 
 
-// Viết chương trình cho phép nhập vào một số là nhiệt độ có đơn vị Celsius, in ra nhiệt độ ở đơn vị Fahrenheit và Kevin tương ứng
+// 5.Viết chương trình cho phép nhập vào một số là nhiệt độ có đơn vị Celsius, in ra nhiệt độ ở đơn vị Fahrenheit và Kevin tương ứng
 // let c = +prompt("Độ C");
 // console.log("Độ Fahrenheit:", (c*1.8)+32,"F"); 
 // console.log("Độ Kevin:", c+273.15,"K");
 
-// Viết chương trình cho phép nhập một số phút tính từ 0h, tính và in ra giờ/phút tương ứng
+// 6.Viết chương trình cho phép nhập một số phút tính từ 0h, tính và in ra giờ/phút tương ứng
 // let minute = +prompt("Nhập số phút");
 // let h = Math.floor(minute/60);
 // console.log("số giờ:", h,"giờ");
@@ -45,7 +45,7 @@
 //     console.log("Số lớn nhất là:",b)
 // } else {
 //      console.log("Số lớn nhất là:",c) };
-//  if (c>a, c>b)
+
 
 // 2. VCT cho phép nhập một số, kiểm tra và in ra số đó có chia hết cho 5 và 11 hay không
 // let a = +prompt("Nhập một số bất kì");
@@ -59,7 +59,7 @@
 // } else {
 //     console.log("chia hết cho 11")
 // };
-// if (c>a, c>b)
+
 
 // 3. VCT cho phép nhập một năm, kiểm tra và in ra năm đó có phải năm nhuận hay không.
 // let y = +prompt("Nhập một năm bất kì")
@@ -91,7 +91,7 @@
 // 6. VCT cho phép nhập một ký tự, kiểm tra và in ra ký tự đó là chữ thường hay chữ in hoa
 // let a = prompt("Nhập một ký tự bất kì"); 
 // if (a >="a" && a <="z") {
-//     console.log("Chữ Thường");
+//     console.log("chữ thường");
 // } else if (a >="A" && a <="Z") {
 //     console.log("Chữ Hoa");
 // } else {
