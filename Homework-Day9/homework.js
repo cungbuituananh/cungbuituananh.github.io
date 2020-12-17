@@ -29,6 +29,11 @@
 
 // 6.Viết chương trình cho phép nhập một số phút tính từ 0h, tính và in ra giờ/phút tương ứng
 // let minute = +prompt("Nhập số phút");
+// let a = +prompt("Nhập số phút");
+// var m = a%60 
+// var h = (a - m)/60 
+// console.log(h + "h" + m + "m");
+
 // let h = Math.floor(minute/60);
 // console.log("số giờ:", h,"giờ");
 // console.log("số phút:",minute%60,"phút");
@@ -48,17 +53,19 @@
 
 
 // 2. VCT cho phép nhập một số, kiểm tra và in ra số đó có chia hết cho 5 và 11 hay không
-// let a = +prompt("Nhập một số bất kì");
-// let b = a % 5;
-// let c = a % 11;
+let a = +prompt("Nhập một số bất kì");
+let b = a % 5;
+let c = a % 11;
 
-// if ( b == 0 && c == 0) {
-//     console.log("chia hết cho cả 2")
-// } else  if ( b == 0 && !(c == 0)) {
-//     console.log("chia hết cho 5")
-// } else {
-//     console.log("chia hết cho 11")
-// };
+if ( b == 0 && c == 0) {
+    console.log("chia hết cho cả 2")
+} else  if ( b == 0 && !(c == 0)) {
+    console.log("chia hết cho 5")
+} else if ( !(b == 0) && c ==0 ) {
+    console.log("chia hết cho 11")
+} else {
+        console.log("Không chia hết cho cả 2")
+};
 
 
 // 3. VCT cho phép nhập một năm, kiểm tra và in ra năm đó có phải năm nhuận hay không.
