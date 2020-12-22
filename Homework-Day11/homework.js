@@ -90,7 +90,7 @@ function sequense(a,b,c){
 }
 
 // Arrow
-let sequense = (a,b,c) => (a<b && b<c && a<c) ? "Các số tăng dần" : ( a>b && b>c && a>c) ? "Các số giảm dần" : "Các số không theo thứ tự";
+let sequense = (a,b,c) => (a<b && b<c) ? "Các số tăng dần" : ( a>b && b>c) ? "Các số giảm dần" : "Các số không theo thứ tự";
 // sequense(1,3,9)  // Check True
 
 // 6.. Viết hàm isAscending(number) trả về số chữ số trong thập phân của number.
