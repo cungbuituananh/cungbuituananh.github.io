@@ -64,6 +64,7 @@
 // }
 // repeat("Macbook - M1 ", 5)
 
+
 //6. Viết hàm chèn một chuỗi con vào chuỗi tại index chỉ định. VD “ac”, “b”, 1 => “abc”
 // let insert = (string1, string2, index) => {
 //     let newStr5 = "";
@@ -78,8 +79,8 @@
 // }
 // insert("abcefgh", "D", 3)
 
-//7. Viết hàm rút gọn chuỗi nếu chuỗi dài hơn giá trị chỉ định. VD “abcdef”, 2 => “ab...”;
 
+//7. Viết hàm rút gọn chuỗi nếu chuỗi dài hơn giá trị chỉ định. VD “abcdef”, 2 => “ab...”;
 // let short = (string, index) => {
 //     let  newStr6 = "";
 //         for( let i = 0; i < index; i++) {
@@ -88,8 +89,14 @@
 // }
 // short("abcd12345", 4)
 
-//9. Viết hàm cắt chuỗi theo số từ chỉ định. VD “My name is Ba”, 2 => “My name” 
 
+//8.Viết hàm đếm số lần xuất hiện của chuỗi con trong chuỗi. VD “abca”, “a” => 2
+// let count = (string1, string2) => 
+//     string1.split(string2).length - 1;
+// count("abcdeabd", "b" )
+
+
+//9. Viết hàm cắt chuỗi theo số từ chỉ định. VD “My name is Ba”, 2 => “My name” 
 // let cut = (string,index) => {
 //     let newStr8 = string.split(" "); 
 //     for( let i = 0; i < index; i++) {
@@ -97,3 +104,16 @@
 //         }
 // }
 // cut("My name is Ba", 2)
+
+
+//10.
+
+
+//11. Viết hàm thay thế các ký tự trong chuỗi thành ký tự liền sau trong bảng mã Unicode. VD: “ad” => “be”
+let replace = (string) => {
+    let newStr10 = "";
+    for ( let i = 0; i < string.length; i++ ) {
+        newStr10 += String.fromCodePoint(string.charCodeAt(i) + 1);
+    }
+    return newStr10; 
+}
