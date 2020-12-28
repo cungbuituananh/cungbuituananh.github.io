@@ -1,8 +1,8 @@
 //1. Viết hàm chuyển đổi một chuỗi thành dạng capitalize.
 let changeUpper = (string) => {
-    let newStr = string.split(" "); // tách mảng thành từng chuỗi sau mỗi khoảng trắng 
+    let newStr = string.split(" "); 
     for (var i = 0; i < newStr.length; i++ ) {
-        newStr[i] = newStr[i].charAt(0).toUpperCase() + newStr[i].substring(1); // xử lý từng chuỗi với chữ cái đầu tiên viết hoa ( charAt(0) )
+        newStr[i] = newStr[i].charAt(0).toUpperCase() + newStr[i].substring(1); 
     }
     return newStr.join(" ") 
 }
