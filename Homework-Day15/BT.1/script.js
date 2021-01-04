@@ -28,11 +28,7 @@ for (let i = 0; i < paragraph.length; i++) {
 
 
 // 4. Thêm src, alt, href cho ảnh, link
-let img = document.querySelector("img");
-img.outerHTML = '<img src="https://image.winudf.com/v2/image1/YXBwLmNvbS5ubi5jdXRlZ2lybHMyX3NjcmVlbl8wXzE1NTgzNjM5ODhfMDAy/screen-0.jpg?fakeurl=1&type=.jpg" alt="Girl" href="#"/>'
 
-let link = document.querySelector("a");
-link.outerHTML = '<a href="https://www.facebook.com/">Click Here</a>'
 
 // 5. Thêm background cho các ô ngẫu nhiên trong bảng (mỗi hàng 1 ô, style bằng .style.backgroundColor), và thay đổi nội dung trong các ô đó thành "😍 Mr. Ba đẹp trai"
 
