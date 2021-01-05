@@ -4,53 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo</title>
-    <style>
-      body{
-          background-color: rgba(126, 126, 126, 0.274);
-      }
-      .toDo, .doing, .completed{
-          background-color: white;
-          width: 70%;
-          margin: auto;
-          margin-top: 20px;
-          border-radius: 10px;
-          padding:10px 10px;
-      }
-      .toDo input{
-          width: 90%;
-          border:none;
-          display: inline-block;
-          padding: 10px 10px;
-          border-radius: 10px;   
-      }
-      
-      .toDo p{
-         display: inline-block;
-         font-size: 20px;
-         margin: -20px;
-      }
-       h4{
-          margin: 10px 5px;
-      }
-      i{
-          color:white;
-      }
-
-  </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="input">
-      <input type="text" placeholder="What you want to do?">
-    </div>
-    <div id="doing">
-      <h3>Doing</h3>
-      <div></div>
-    </div>
-    <div id="complete">
-      <h3>Complete</h3>
-      <div></div>
-    </div>
-    <script src="todo.js"></script>
+      <div id="input">
+        <input type="text" placeholder="What you want to do?">
+        <button id="add" type="submit"><img src="add.png" alt=""></button>
+      </div>
+      <div id="doing">
+        <h3>Doing</h3>
+        <div></div>
+      </div>
+      <div id="complete">
+        <h3>Complete</h3>
+        <div></div>
+      </div>
+      <script src="todo.js"></script>
   </body>
-  
 </html>
