@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+  }
+  
+  body {
+    background-color: grey;
+  }
+  #doing,
+  #complete,
+  #input {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 15px;
+  }
+  #input {
+    position: relative;
+  }
+  #input input {
+    width: 100%;
+    border: none;
+    height: 30px;
+  }
+  #input input:focus {
+    outline: none;
+  }
+  #add {
+    padding: 0;
+    border: none;
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  
