@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+    <link rel="stylesheet" href="slide.css">
+
+</head>
+<body>
+<!-- SLIDE -->
+    <div class="slide-container">
+        <div class="item fade">
+            <img src="https://www.automobilemag.com/uploads/sites/11/2019/12/2002-Ferrari-F2002-front-three-quarter.jpg" alt="">
+            <div class="text">Ferrari</div>
+        </div>
+        <div class="item fade">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sergio-perez-of-mexico-driving-the-racing-point-rp20-news-photo-1582228948.jpg?crop=0.845xw:0.633xh;0.0555xw,0.210xh&resize=1200:*" alt="">
+            <div class="text">Racing Point</div>
+        </div>
+        <div class="item fade">
+            <img src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/593/2017-mercedes-amg-w08-eq-power-formula-one-race-car_100593495.jpg" alt="">
+            <div class="text">Mercedes</div>
+        </div>
+        <div class="item fade">
+            <img src="https://e1.365dm.com/19/02/2048x1152/skysports-f1-max-verstappen_4581733.jpg" alt="">
+            <div class="text">Red Bull Racing</div>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#8592;</a>
+        <a class="next" onclick="changeSlide(1)">&#8594;</a>
+    </div>
+
+
+<!-- TEST -->
+
+
+<script>
+///////////// SLIDE ///////////////
+        // Tạo biến với index slide đầu tiên
+    var slideIndex = 1;
+
+        // Tạo hàm cho nút - với tham số truyền vào -1 tương đương với prev / +1 với next 
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+        // Hàm hiển thị slide 
+    function showSlides(n) {
+            var slides = document.querySelectorAll(".item");
+            // Nếu ở slide cuối cùng thì chuyển về slide đầu tiên
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+            }
+
+        // Hiển thị slide    
+    showSlides(slideIndex);
+    </script>
+</body>
+</html>
