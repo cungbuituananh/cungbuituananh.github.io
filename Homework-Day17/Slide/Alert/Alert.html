@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert</title>
+    <style>
+      button {
+        width: 100%;
+      }
+      #popup {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        width: 200px;
+      }
+      .popup-content {
+        padding: 10px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: black;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        position: relative;
+        margin-bottom: 10px;
+      }
+      .popup-content span {
+        font-size: 15px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="click" onclick="popUp()">Click Here</button>
+    <div id="popup"></div>
+
+    <script>
+      function createPopUp() {
+        let div = document.createElement("div");
+        div.classList.add("popup-content");
+        div.id = "popup-content";
+        div.innerHTML = `CaFe Sữa Đá ++`;
+
+        let btn = document.createElement("span");
+        btn.innerHTML = "X";
+        div.append(btn);
+        btn.addEventListener("click", function () {
+          document.getElementById("popup-content").remove();
+        });
+        return div;
+      }
+
+      function popUp() {
+        popup.append(createPopUp());
+        setTimeout(() => {
+          document.getElementById("popup-content").remove();
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
