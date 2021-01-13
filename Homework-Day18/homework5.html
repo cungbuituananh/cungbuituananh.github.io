@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+    <title>Ex.6</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 15px;
+        }
+        .nav{
+            text-align: center;
+        }
+
+        .menu-show {
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .fas {
+            color: white;
+            font-size: 50px;
+        }
+        #menu-hide {
+            margin-top: 15px;
+            color: white;
+            background-color: blue;
+        }
+        .menu-items {
+            width: 100%;
+            height: 30px;
+            border: 1px solid black;
+        }
+        .content {
+            background-color: blue;
+            width: 100%;
+            height: 600px;
+            margin-top: 15px;
+        }
+        .logo {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .logo {
+
+            }
+            .menu-show{
+                display:none;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class=""></div>
+            <div class="menu-show" onclick="showMenu()"><i class="fas fa-align-justify"></i></div>
+            <div id="menu-hide">
+                <div class="menu-items">Trang chủ</div>
+                <div class="menu-items menu1-items">Menu1</div>
+                <div class="menu-items menu2-items">Menu2</div>
+                <div class="menu-items menu3-items">Menu3</div>
+            </div>
+        </div>
+        <div class="content"></div>
+    </div>
+    <script>
+        function showMenu() {
+            let menu = document.getElementById("menu-hide");
+            if ( menu.style.display == "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
