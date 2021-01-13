@@ -49,23 +49,42 @@
             display: none;
         }
         @media (min-width: 768px) {
-            .logo {
-
+            .nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
             }
-            .menu-show{
+            .logo {
+                height: 30px;
+                width: 100px;
+                background-color: orangered;
+                display: block;
+            }
+            .menu-show, .menu0-items{
                 display:none;
+            }
+            .menu-lg {
+                display: flex;
+                align-items: center;
+                margin-top: 0px !important ;
+                width: 50%;
             }
         }
         
     </style>
 </head>
 <body>
+    <div>
+        <a href=""></a>
+    </div>
     <div class="container">
         <div class="nav">
-            <div class=""></div>
+            <div class="logo">LOGO</div>
             <div class="menu-show" onclick="showMenu()"><i class="fas fa-align-justify"></i></div>
-            <div id="menu-hide">
-                <div class="menu-items">Trang chủ</div>
+            <div id="menu-hide" class="menu-lg">
+                <div class="menu-items menu0-items">Trang chủ</div>
                 <div class="menu-items menu1-items">Menu1</div>
                 <div class="menu-items menu2-items">Menu2</div>
                 <div class="menu-items menu3-items">Menu3</div>
