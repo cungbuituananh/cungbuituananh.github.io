@@ -140,7 +140,7 @@ img {
   .also-ctn {
     padding:0 50px !important;
 }
-    .comment {
+    .comment input {
         padding-bottom: 500px;
     }
 }
