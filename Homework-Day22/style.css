@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 1080px) {
+  .container {
+    max-width: 980px;
+  }
+
+  .banner-text {
+    margin-right: 420px !important;
+    margin-left: 100px !important;
+    margin-top: -150px !important;
+  }
+  .text-content p {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 36px !important;
+    line-height: 43px;
+
+    color: #333333;
+  }
+  .text-content span {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px !important;
+    line-height: 43px;
+
+    color: #333333;
+  }
+}
+
+@media (min-width: 795px) {
+  .nav-item {
+    padding-left: 45px !important;
+    border: 0 !important;
+  }
+  .banner-text {
+    margin-left: 100px;
+    margin-top: -15%;
+    margin-right: 40%;
+  }
+  .text-content {
+    padding: 25px 35px 45px 25px;
+  }
+}
+
+@media (min-width: 890px) {
+  .navbar {
+    margin: 45px 0;
+  }
+
+  /* Fact */
+  .fact-ctn {
+    margin-bottom: 40px;
+  }
+  .fact-ctn h2,
+  .blog-ctn h2 {
+    margin-bottom: 40px;
+  }
+  .fact-box h1 {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 86px;
+    color: #ef5d64;
+  }
+  .fact-box h3 {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px !important;
+    line-height: 29px;
+    color: #333333;
+  }
+  .fact-box p {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px !important;
+    line-height: 29px;
+    color: #333333;
+  }
+  .fact-box a {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px !important;
+    line-height: 29px;
+    color: #333333;
+    text-decoration: none;
+  }
+
+  .email-box {
+    margin: 0 193px;
+    padding: 20px 20px;
+    border: 1px solid #979797
+}
+
+.subscribe-ctn p {
+    font-size: 24px !important;
+}
+}
+
+/* MOBILE */
+
+/* navbar */
+.nav-link {
+  padding: 0 !important;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3.57143px;
+  color: #333333;
+  text-align: center;
+}
+
+.nav-item {
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+}
+
+/* banner */
+
+.text-content p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 43px;
+  color: #333333;
+}
+.text-content span {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 43px;
+  color: #333333;
+}
+
+.banner-actions button {
+  padding: 15px 20px;
+  border: 0;
+  background-color: white;
+}
+.text-content {
+  /*  */
+  background-color: white;
+}
+
+.banner-img {
+  position: relative;
+  z-index: -1;
+}
+
+/* Fact */
+.fact-ctn,
+.blog-ctn {
+  padding: 0 10px;
+}
+.fact-ctn h2,
+.blog-ctn h2 {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 57px;
+  color: #333333;
+}
+.fact-items {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  padding: 10px;
+}
+
+.fact-box {
+  padding: 20px;
+  position: relative;
+}
+.fact-box h1 {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 86px;
+    color: #ef5d64;
+}
+.fact-box h3 {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px ;
+  line-height: 29px;
+  color: #333333;
+}
+.fact-box p {
+  padding-bottom: 20px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  color: #333333;
+}
+.fact-box a {
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #333333;
+}
+
+/* Blog */
+.blog-box {
+  margin-bottom: 40px;
+}
+.blog-box h4 {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  margin: 20px 0 10px 0;
+}
+.blog-box p {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+}
+
+/* Button more */
+.more-btn button {
+  padding: 15px 50px;
+  border: 1px solid #979797;
+  background-color: white;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  color: #333333;
+}
+.more-btn button a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Comment */
+.user-comment img {
+    width: auto;
+}
+
+.user-info {
+    margin-left: 20px;
+}
+
+.comment-ctn {
+    padding: 80px 40px 140px 40px;
+}
+
+.comment-ctn p {
+    font-family: SF Pro Display;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 54px;
+font-style: italic ;
+letter-spacing: 0.833333px;
+color: #333333;
+}
+.user-comment {
+    margin-top: 50px;
+}
+.user-info h5 {
+    font-family: SF Pro Display;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+color: #333333;
+margin: 0;
+}
+.user-info span {
+    font-family: SF Pro Display;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 2.5px;
+color: #333333;
+}
+
+.email-box img {
+    width: auto;
+}
+.email-box input {
+    font-family: SF Pro Display;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+color: #797979;
+border: 0;
+}
+.email {
+    padding-right: 50px;
+}
+.chevron {
+ border-left: 1px solid black;
+}
+
+.subscribe-ctn p {
+    font-family: SF Pro Display;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 29px;
+color: #333333;
+margin-bottom: 45px;
+}
