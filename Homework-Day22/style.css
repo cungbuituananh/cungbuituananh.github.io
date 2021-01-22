@@ -111,7 +111,18 @@ img {
 }
 
 /* MOBILE */
+.container header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 0 50px;
+}
 
+.banner-ctn {
+  margin-top: 60px;
+}
 /* navbar */
 .nav-link {
   padding: 0 !important;
@@ -128,6 +139,7 @@ img {
 .nav-item {
   padding: 5px 0;
   border-bottom: 1px solid black;
+  background-color: white;
 }
 
 /* banner */
@@ -154,7 +166,6 @@ img {
   background-color: white;
 }
 .text-content {
-  /*  */
   background-color: white;
 }
 
@@ -331,7 +342,7 @@ border: 0;
 }
 
 .subscribe-ctn p {
-    font-family: SF Pro Display;
+font-family: SF Pro Display;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;
