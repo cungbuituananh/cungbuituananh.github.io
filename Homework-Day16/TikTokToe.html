@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XO</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+      }
+
+      tr,
+      td {
+        width: 40px;
+        height: 40px;
+        border: 1px solid grey;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="next"></p>
+    <table>
+      <tbody id="board"></tbody>
+    </table>
+    <button id="reset" hidden>Re-play</button>
+
+    <script>
+      var n = +prompt("nhap o")
+      var end = false;
+      var count = 0;
+      var turn = "X";
+      next.textContent = "Player: " + turn; // Tên 
+
+      var click = function (e) {
+        if (!end) {
+          e.currentTarget.textContent = turn;
+
+          if (horizonal(turn) || vertical(turn) || diagonal(turn)) {
+            end = !end;
+            next.textContent = "Winner: " + turn;
+            reset.hidden = false;
+            return;
+          }
+          count++;
+          turn = turn == "X" ? "O" : "X";
+          next.textContent = "Player: " + turn;
+        }
+
+        if (count >= n*n) {
+          end = !end;
+          next.textContent = "All loser 🤣";
+          reset.hidden = false;
+        }
+      };
+
+      function createRow() {
+        var tr = document.createElement("tr");
+
+        for (var i = 0; i < n; i++) {
+          var td = document.createElement("td");
+          td.addEventListener("click", click, { once: true });
+          tr.append(td);
+        }
+
+        return tr;
+      }
+
+      function createBoard() {
+        var fr = new DocumentFragment();
+
+        for (var i = 0; i < n; i++) {
+          fr.append(createRow());
+        }
+
+        return fr;
+      }
+
+      board.append(createBoard());
+
+      function horizonal(turn) {
+        for (var i = 0; i < n; i++) {
+          if (
+            board.rows[i].cells[0].textContent == turn &&
+            board.rows[i].cells[1].textContent == turn &&
+            board.rows[i].cells[2].textContent == turn
+          ) {
+            return true;
+          }
+        }
+
+        return false;
+      }
+
+      function vertical() {
+        for (var i = 0; i < n; i++) {
+          if (
+            board.rows[0].cells[i].textContent == turn &&
+            board.rows[1].cells[i].textContent == turn &&
+            board.rows[2].cells[i].textContent == turn
+          ) {
+            return true;
+          }
+        }
+
+        return false;
+      }
+
+      function diagonal() {
+        if (
+          board.rows[0].cells[0].textContent == turn &&
+          board.rows[1].cells[1].textContent == turn &&
+          board.rows[2].cells[2].textContent == turn
+        ) {
+          return true;
+        }
+
+        if (
+          board.rows[0].cells[2].textContent == turn &&
+          board.rows[1].cells[1].textContent == turn &&
+          board.rows[2].cells[0].textContent == turn
+        ) {
+          return true;
+        }
+
+        return false;
+      }
+      reset.addEventListener("click", function () {
+        board.innerHTML = "";
+        board.append(createBoard());
+        end = !end;
+        count = 0;
+        turn = "X";
+        next.textContent = "Player: " + turn;
+        this.hidden = true;
+      });
+    </script>
+  </body>
+</html>

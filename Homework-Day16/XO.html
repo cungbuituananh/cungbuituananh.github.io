@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XO</title>
+    <style>
+      .container {
+        
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+        margin: auto;
+      }
+
+      tr,
+      td {
+        width: 40px;
+        height: 40px;
+        border: 1px solid grey;
+        background-color: rgb(218, 218, 248);
+        border-radius: 25%;
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="next"></p>
+      <table>
+        <tbody id="board"></tbody>
+      </table>
+      <button id="reset" hidden>Re-play</button>
+    </div>
+  
+
+    <script>
+      var n = 10;
+      var end = false;
+      var count = 0;
+      var turn = "X";
+      next.textContent = "Player: " + turn; // Tên 
+
+      var click = function (e) {
+        if (!end) {
+          e.currentTarget.textContent = turn;
+        
+          let rowIndex = this.parentElement.rowIndex; // lấy ra vị trí cột hàng dọc 
+          let cellIndex = this.cellIndex; // lấy ra vị trí theo hàng ngang
+
+          if (horizonal(turn,rowIndex,cellIndex) || vertical(turn,rowIndex,cellIndex) || diagonal(turn,rowIndex,cellIndex)) {
+            end = !end;
+            next.textContent = "Winner: " + turn;
+            reset.hidden = false;
+            return;
+          }
+          count++;
+          turn = turn == "X" ? "O" : "X";
+          next.textContent = "Player: " + turn;
+        }
+
+        if (count >= n*n) {
+          end = !end;
+          next.textContent = "All loser 🤣";
+          reset.hidden = false;
+        }
+      };
+
+      function createRow() {
+        var tr = document.createElement("tr");
+        for (var i = 0; i < n; i++) {
+          var td = document.createElement("td");
+          td.addEventListener("click", click, { once: true });
+          tr.append(td);
+        }
+        return tr;
+      }
+
+      function createBoard() {
+        var fr = new DocumentFragment();
+        for (var i = 0; i < n; i++) {
+          fr.append(createRow());
+        }
+        return fr;
+      }
+
+      board.append(createBoard()); 
+
+
+      // Check hàng ngang
+      function horizonal(turn,rowIndex,cellIndex) {
+        let countHorizonal = 1;
+        for(let i = cellIndex -1; i>=0;i--){
+          if(board.rows[rowIndex].cells[i].textContent == turn){
+            countHorizonal++;
+            if(countHorizonal == 5) return true
+          } else break;
+        }
+        for(let i = cellIndex +1; i< n-1;i++){
+          if(board.rows[rowIndex].cells[i].textContent == turn){
+            countHorizonal++;
+            if(countHorizonal == 5) return true
+          } else break;
+        }
+        return false;
+      }
+
+      // Check hàng dọc
+      function vertical (turn,rowIndex,cellIndex) {
+        let countVertical = 1;
+        for(let i = rowIndex -1; i>=0;i--){
+          if(board.rows[i].cells[cellIndex].textContent == turn){
+            countVertical++;
+            if(countVertical == 5) return true
+          } else break;
+        }
+        for(let i = rowIndex +1; i< n;i++){
+          if(board.rows[i].cells[cellIndex].textContent == turn){
+            countVertical++;
+            if(countVertical == 5) return true
+          } else break;
+        }
+        return false;
+      }
+
+      // Check chéo từ Trái sang Phải
+      function diagonal(turn,rowIndex,cellIndex){ 
+        let countDiagonal = 1;
+        //check nua tren trai sang phai
+        for(let row=rowIndex -1, cell=cellIndex-1; row>=0 && cell>=0; row--,cell--){
+          if(board.rows[row].cells[cell].textContent == turn){
+            countDiagonal++;
+            if(countDiagonal==5) return true;
+          }
+          else break;
+        }
+        //phai sang trai
+        for(let row=rowIndex-1,cell=cellIndex+1; row>=0 && cell<n; row--,cell++ ){
+          if(board.rows[row].cells[cell].textContent == turn){
+            countDiagonal++;
+            if(countDiagonal==5) return true;
+          }
+        else break;
+        }
+
+        //check nua duoi trai sang phai
+        for(let row=rowIndex +1, cell=cellIndex+1; row>= 0 && cell<n; row++,cell++){
+          if(board.rows[row].cells[cell].textContent == turn){
+            countDiagonal++;
+            if(countDiagonal==5) return true;
+          }
+          else break;
+        }
+        //phai sang trai
+        for(let row=rowIndex +1, cell=cellIndex-1; row<n && cell>=0; row++,cell--){
+          if(board.rows[row].cells[cell].textContent == turn){
+            countDiagonal++;
+            if(countDiagonal==5) return true;
+          }
+          else break;
+        }
+        return false;
+      }
+
+      reset.addEventListener("click", function () {
+        board.innerHTML = "";
+        board.append(createBoard());
+        end = !end;
+        count = 0;
+        turn = "X";
+        next.textContent = "Player: " + turn;
+        this.hidden = true;
+      });
+    </script>
+  </body>
+</html>

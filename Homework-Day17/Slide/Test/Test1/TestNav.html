@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"
+    />
+    <link rel="stylesheet" href="StyleNav.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="menu-ctn">
+        <li class="main-menu">HOME</li>
+        <li class="main-menu" onClick="subMenu">
+          COURSE <i class="fas fa-sort-down"></i>
+          <ul class="menu-dropdown">
+            <li>Pole</li>
+            <li>Bungee</li>
+            <li>Ariel Yoga</li>
+            <li>Basic</li>
+          </ul>
+        </li>
+        <li class="main-menu" onClick="subMenu()">
+          TEACHERS <i class="fas fa-sort-down"></i>
+          <ul class="menu-dropdown">
+            <li>Teacher Ba</li>
+            <li>Teacher Hiên</li>
+            <li>Master Cường</li>
+            <li>Teacher Linh</li>
+          </ul>
+        </li>
+        <li class="main-menu" onClick="subMenu">
+          ROOMS <i class="fas fa-sort-down"></i>
+          <ul class="menu-dropdown">
+            <li>Tố Hữu</li>
+            <li>Nguyễn Đình Chiểu</li>
+            <li>Phạm Ngọc Thạch</li>
+            <li>Kim Liên</li>
+          </ul>
+        </li>
+        <li class="main-menu">CONTACT US</li>
+      </ul>
+    </div>
+
+    <script>
+      var mainMenu = document.querySelectorAll(".main-menu");
+      var dropMenuItem = document.querySelectorAll(".menu-dropdown");
+
+        // Test1 - Lỗi click ra windown hiện cả 3 list "menu-drop"
+
+      document.addEventListener("click", (event) => {
+        if (event.target !== mainMenu && event.target !== dropMenuItem ) {
+          for (let i = 0; i < dropMenuItem.length; i++) {
+            dropMenuItem[i].classList.remove("active");
+          }
+        }
+        event.target.querySelectorAll(".menu-dropdown").forEach((item) => {
+          item.classList.add("active");
+        })
+      });
+
+        // Test2 - Đoạn này em chưa nghĩ ra cách tắt thằng menu click trước đấy. 
+      // document.querySelectorAll(".main-menu").forEach((item) => {
+      //   item.addEventListener("click", (event) => {
+      //     item.querySelectorAll(".menu-dropdown").forEach((item) => {
+      //       item.classList.toggle("active");
+      //     });
+      //   });
+      // });
+    </script>
+  </body>
+</html>

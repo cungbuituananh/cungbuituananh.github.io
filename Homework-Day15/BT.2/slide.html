@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper {
+            max-width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="main-img">
+                <img src="" alt="">
+            </div>
+            <div class="thumb">
+                <div class="list">
+                    <div class="list-items">
+                        <img class="thumb-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVbsGlVAbJ8K8PCWDB4XvCzxeaF3V2d5_Ug&usqp=CAU" alt="">
+                    </div>
+                    <div class="list-items">
+                        <img class="thumb-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBUdLzqneBgGFHq-W5Lv_7ZTrBgoLMc9u1Bw&usqp=CAU" alt="">
+                    </div>
+                    <div class="list-items">
+                        <img class="thumb-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-eE7cERA6HkfHb6tWx0IquL2sF60l56bzg&usqp=CAU" alt="">
+                    </div>
+                    <div class="list-items">
+                        <img class="thumb-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShROpvSMrCYfevs-UgjuCRND2NF1JguJHcMw&usqp=CAU" alt="">
+                    </div>
+                    <div class="list-items">
+                        <img class="thumb-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6PXJoGplJvkwn3P3zDc0Swci1B4Rhv7fiuQ&usqp=CAU" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let main = document.getElementById("main-img");
+        let thumbs = document.querySelector("thumb-img");
+        thumbs.forEach(img => {
+            img.onclick = function() {
+                main.src = this.src;
+            }
+        })
+    </script>
+</body>
+</html>
