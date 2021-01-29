@@ -83,3 +83,11 @@ a {
     font-size: 1.4rem;
     color: #fff;
 }
+
+.site-blocks-cover i {
+    font-size: 5rem;
+
+}
+.site-blocks-cover span {
+    font-size: 1.5rem;
+}
