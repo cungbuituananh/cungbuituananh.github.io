@@ -1,6 +1,6 @@
 $('.slider-wrapper').slick({
     centerMode: true,
-    // centerPadding: '60px',
+    centerPadding: '60px',
     slidesToShow: 3,
     arrows: false,
     responsive: [
@@ -9,7 +9,7 @@ $('.slider-wrapper').slick({
         settings: {
           arrows: false,
           centerMode: true,
-        //   centerPadding: '40px',
+          centerPadding: '40px',
           slidesToShow: 3
         }
       },
@@ -18,7 +18,7 @@ $('.slider-wrapper').slick({
         settings: {
           arrows: false,
           centerMode: true,
-        //   centerPadding: '40px',
+          centerPadding: '40px',
           slidesToShow: 1
         }
       }
