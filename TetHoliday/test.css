@@ -1,4 +1,6 @@
-
+.slider-wrapper {
+    line-height: 0;
+}
 .slider-item img {
     width: 100%;
     opacity: 0.6;
@@ -8,17 +10,12 @@
     opacity: 1;
 }
 
-/* .slider-item {
-    position: relative;
+/* .slick-slide {
+    padding: 30px;
 }
-
-.slider-text {
-    position: absolute;
-    top: 0;
-    text-align: center;
-    width: 100%;
+.slick-center {
+    padding: 0;
 } */
-
 .slider-text  {
     -webkit-box-orient: vertical;
     top: 0;
