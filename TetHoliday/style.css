@@ -17,19 +17,49 @@ a {
 }
 
 
-
-
 @media (min-width: 992px) {
     .nav-item {
         padding: 20px 10px;
         font-size: 15px;
     }
-    
     .dropdown-item {
         font-size: 15px;
     }
+    .feature-text h2 {
+        font-size: 5rem !important;
+    }
+    .bg-image {
+        width: 100%;
+    }
+    .slick-slide {
+        padding: 50px !important;
+    }
+    .class-price {
+        font-weight: 700 !important;
+        font-size: 2rem !important;
+        width: 100px !important;
+        height: 100px !important;
+        line-height: 100px !important;
+    }
+    .class-heading {
+        font-size: 3rem !important;
+    }
+    .sched-text {
+        width: 50%;
+        padding: 40px !important;
+    }
+    .bg-image {
+        width: 50%;
+    }
 
 }
+
+@media (max-width: 990px) {
+    .bg-image {
+        height: 200px;
+    }
+}
+
 
 .site-bar-top {
     font-size: 1.5rem;
@@ -41,13 +71,16 @@ a {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .nav-link {
+
     color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .nav-item a:hover {
     color: rgba(255, 255, 255, 1) !important;
 }
+
 .site-bar-wrap {
     width: 100%;
     z-index: 10;
@@ -56,9 +89,11 @@ a {
 .site-bar-wrap span, .site-bar-wrap i {
     color: white;
 }
+
 .site-nav-bar {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .navbar-light .navbar-toggler {
     border: 0;
 }
@@ -81,7 +116,6 @@ a {
 .site-blocks-cover::before {
     position: absolute;
     content: "";
-
     left: 0;
     bottom: 0;
     right: 0;
@@ -90,7 +124,7 @@ a {
 }
 
 .site-blocks-cover h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 700;
     color: #fff;
 }
@@ -98,7 +132,6 @@ a {
     font-size: 2rem;
     color: #fff;
 }
-
 .site-blocks-cover i {
     font-size: 5rem;
 
@@ -109,17 +142,164 @@ a {
 .blocks-social {
     color:  rgba(255, 255, 255, 1);
 }
-
 .blocks-wrapper {
     z-index: 0;
 }
-
 .blocks-wrapper a{ 
     color:  rgba(255, 255, 255, 1)
 }
-
 .blocks-wrapper i:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+}
+.feature-horizon {
+    width: 80px;
+    height: 2px;
+    background: #6610f2;
+}
+.feature-text h2 {
+    font-size: 3rem;
+    position: relative;
+    padding-top: 30px;
+    z-index: 2;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: black;
+}
+
+.feature-text p, .btn {
+    font-size: 16px !important;
+}
+
+.btn {
+    border-width: 2px;
+    margin-left: 5px;
+}
+.btn-primary {
+    background-color: #6610f2;
+    border-color: #6610f2;
+    padding: 6px 12px;
+}
+
+.btn-primary:hover {
+    color: #000;
+    border-color: #6610f2;
+    background-color: transparent !important;
+}
+
+/* Slider */
+.slider-wrapper {
+    line-height: 0;
+}
+.slider-item img {
+    width: 100%;
+    opacity: 0.6;
+}
+.slick-center img {
+    opacity: 1;
+}
+
+.slick-current.slick-center {
+    transform: scale(1.2);
+  }
+.slider-text  {
+    -webkit-box-orient: vertical;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.slider-wrapper {
+    line-height: 0;
+}
+.slider-item {
+    overflow: hidden;
+    background:  rgba(0, 0, 0, 0.363);
+}
+.slick-center img {
+    opacity: 1 !important;
+
+}
+.slick-slide {
+    padding: 20px;
+}
+.slick-current.slick-center {
+    transform: scale(1.2);
+  }
+.slider-text  {
+    -webkit-box-orient: vertical;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.class-price {
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    background: #6610f2;
+    border-radius: 50%;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    border: 2px solid transparent;
+}
+.class-heading {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.slider-item img {
+    opacity: 0.6;
+}
+.slider-item:hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.slider-text:hover p {
+    border: 2px solid white;
+    background: none;
+}
+.feature {
+    padding: 70px 0;
+}
+
+/* Schedule */
+.schudule {
+    padding: 70px 0;
+}
+.sched-image img {
+    width: 100%;
+}
+.sched-text {
+    padding: 25px;
+}
+.sched-text h3  {
+    font-size: 2rem;
+    color: black;
+}
+.sched-text p {
+    font-size: 1.6rem;
+}
+.sched-text button {
+    font-size: 1.3rem !important;
+    margin: 0;
+}
+.sched-time span {
+    font-size: 1.3rem;
+    color:black;
+    font-weight: 500;
+}
+.bg-image {
+    background-size: cover;
+    background-position: center center;
 }
