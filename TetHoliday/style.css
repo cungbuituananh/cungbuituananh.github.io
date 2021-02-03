@@ -316,6 +316,10 @@ a {
 .item {
   padding-right: 15px;
   padding-left: 15px;
+  display: none;
+}
+.show {
+  display: block;
 }
 .item a {
   display: block;
@@ -328,10 +332,7 @@ a {
   height: auto;
 }
 .item-wrap {
-  display: none !important;
-}
-.show {
-  display: block !important;
+  display: block;
 }
 
 .item-wrap i {
@@ -452,6 +453,6 @@ h4 {
   font-size: 1.6rem;
 }
 .form-subscribe .btn.btn-primary:hover {
-        background: #6610f2 !important;
-    color: #fff;
+  background: #6610f2 !important;
+  color: #fff;
 }
