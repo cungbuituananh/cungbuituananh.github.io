@@ -17,6 +17,7 @@
     />
 
     <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -52,99 +53,99 @@
         </div>
       </div>
     </section> -->
-    <div class="container-fluid">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <div class="sched d-lg-flex d-block">
-            <div class="bg-image order-2" style="background-image: url(img/img1.jpeg);"></div>
-            <div class="sched-text">
-              <h3>Yinyasa</h3>
-              <p>
-                Far far away, behind the word mountains, far from the
-                countries Vokalia and Consonantia, there live the blind
-                texts...
-              </p>
-              <p class="sched-time">
-                <span><span class="fa fa-clock-o"></span> 5:30 PM</span>
-                <br />
-                <span
-                  ><span class="fa fa-calendar"></span> April 22, 2019</span
-                >
-                <br />
-              </p>
-              <button class="btn btn-primary">Join from $15</button>
-            </div>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="row gallery-text">
+          <div class="col-12 feature-text text-center mb-5">
+            <div class="feature-horizon m-auto"></div>
+            <h2 class="mb-5">Yoga Gallery</h2>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="sched d-lg-flex d-block">
-            <div class="bg-image order-1" style="background-image: url(img/img1.jpeg);"></div>
-            <div class="sched-text">
-              <h3>Yinyasa</h3>
-              <p>
-                Far far away, behind the word mountains, far from the
-                countries Vokalia and Consonantia, there live the blind
-                texts...
-              </p>
-              <p class="sched-time">
-                <span><span class="fa fa-clock-o"></span> 5:30 PM</span>
-                <br />
-                <span
-                  ><span class="fa fa-calendar"></span> April 22, 2019</span
-                >
-                <br />
-              </p>
-              <button class="btn btn-primary">Join from $15</button>
-            </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center gallery-btn">
+            <button class="btn btn-primary" onclick="filterSelection('all')">All</button>
+            <button class="btn btn-primary" onclick="filterSelection('web')">Classes</button>
+            <button class="btn btn-primary" onclick="filterSelection('design')">Intern</button>
+            <button class="btn btn-primary" onclick="filterSelection('brand')">Training</button>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="sched d-lg-flex d-block">
-            <div class="bg-image" style="background-image: url(img/img1.jpeg);"></div>
-            <div class="sched-text">
-              <h3>Yinyasa</h3>
-              <p>
-                Far far away, behind the word mountains, far from the
-                countries Vokalia and Consonantia, there live the blind
-                texts...
-              </p>
-              <p class="sched-time">
-                <span><span class="fa fa-clock-o"></span> 5:30 PM</span>
-                <br />
-                <span
-                  ><span class="fa fa-calendar"></span> April 22, 2019</span
-                >
-                <br />
-              </p>
-              <button class="btn btn-primary">Join from $15</button>
-            </div>
+        <div class="row g-0">
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img1.jpeg" class="item-wrap web position-relative " data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img1.jpeg" class="img-fluid" alt="" />
+            </a>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="sched d-lg-flex d-block">
-            <div class="bg-image" style="background-image: url(img/img1.jpeg);"></div>
-            <div class="sched-text">
-              <h3>Yinyasa</h3>
-              <p>
-                Far far away, behind the word mountains, far from the
-                countries Vokalia and Consonantia, there live the blind
-                texts...
-              </p>
-              <p class="sched-time">
-                <span><span class="fa fa-clock-o"></span> 5:30 PM</span>
-                <br />
-                <span
-                  ><span class="fa fa-calendar"></span> April 22, 2019</span
-                >
-                <br />
-              </p>
-              <button class="btn btn-primary">Join from $15</button>
-            </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img2.jpeg" class="item-wrap web position-relative " data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img2.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img3.jpeg" class="item-wrap brand position-relative " data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img3.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img4.jpeg" class="item-wrap brand position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img4.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img5.jpeg" class="item-wrap design position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img5.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img2.jpeg" class="item-wrap web position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img2.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img4.jpeg" class="item-wrap design position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img4.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img3.jpeg" class="item-wrap brand position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img3.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img5.jpeg" class="item-wrap web position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img5.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img1.jpeg" class="item-wrap web position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img1.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img3.jpeg" class="item-wrap brand position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img3.jpeg" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <div class="item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <a href="img/img5.jpeg" class="item-wrap web position-relative" data-fancybox="images">
+              <i class="fas fa-search position-absolute"></i>
+              <img src="img/img5.jpeg" class="img-fluid" alt="" />
+            </a>
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
