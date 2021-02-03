@@ -328,7 +328,10 @@ a {
   height: auto;
 }
 .item-wrap {
-  display: block;
+  display: none !important;
+}
+.show {
+  display: block !important;
 }
 
 .item-wrap i {
@@ -449,6 +452,6 @@ h4 {
   font-size: 1.6rem;
 }
 .form-subscribe .btn.btn-primary:hover {
-    background: #6610f2 !important;
+        background: #6610f2 !important;
     color: #fff;
 }
