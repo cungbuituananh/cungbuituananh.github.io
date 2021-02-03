@@ -448,3 +448,7 @@ h4 {
 .site-footer p {
   font-size: 1.6rem;
 }
+.form-subscribe .btn.btn-primary:hover {
+    background: #6610f2 !important;
+    color: #fff;
+}
