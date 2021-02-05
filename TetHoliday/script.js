@@ -69,6 +69,8 @@ var btns = btnContainer.getElementsByClassName("btn");
 //     this.className += " active";
 //   });
 // }
+
+// teacher Bar 
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
@@ -77,6 +79,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// Button next - prev feature part 
 $("#next").click(function() {
   $(".slider-wrapper").slick("slickNext");
 })
