@@ -156,12 +156,10 @@ a {
 .feature-text p,
 .btn {
   font-size: 16px !important;
-}
-
-.btn {
   border-width: 2px;
   margin-left: 5px;
 }
+
 .btn-primary {
   background-color: #6610f2;
   border-color: #6610f2;
@@ -169,6 +167,11 @@ a {
 }
 
 .btn-primary:hover {
+  color: #000;
+  border-color: #6610f2;
+  background-color: transparent !important;
+}
+.btn.active {
   color: #000;
   border-color: #6610f2;
   background-color: transparent !important;
@@ -317,6 +320,10 @@ a {
   padding-right: 15px;
   padding-left: 15px;
   display: none;
+  animation-name: faded;
+}
+@keyframes faded {
+  
 }
 .show {
   display: block;
