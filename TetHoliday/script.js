@@ -62,10 +62,25 @@ function w3RemoveClass(element, name) {
 
 var btnContainer = document.getElementById("gallery-btn");
 var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function(){
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    current[0].classList.remove("active");
+    this.classList.add("active");
   });
 }
+
+$("#next").click(function() {
+  $(".slider-wrapper").slick("slickNext");
+})
+
+$("#prev").click(function() {
+  $(".slider-wrapper").slick("slickPrev");
+})
