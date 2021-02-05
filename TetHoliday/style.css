@@ -320,10 +320,12 @@ a {
   padding-right: 15px;
   padding-left: 15px;
   display: none;
-  animation-name: faded;
+  animation-name: example;
+  animation-duration: 1.5s;
 }
-@keyframes faded {
-  
+@keyframes example {
+  from {opacity: 0.3;}
+  to {opacity: 1; }
 }
 .show {
   display: block;
@@ -493,3 +495,5 @@ h4 {
   color: #6610f2;
   background: none;
 }
+
+
