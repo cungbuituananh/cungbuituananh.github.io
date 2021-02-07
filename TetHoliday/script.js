@@ -62,6 +62,8 @@ function w3RemoveClass(element, name) {
 
 var btnContainer = document.getElementById("gallery-btn");
 var btns = btnContainer.getElementsByClassName("btn");
+
+// Lỗi thêm 2 class active 
 // for (var i = 0; i < btns.length; i++) {
 //   btns[i].addEventListener("click", function(){
 //     var current = document.getElementsByClassName("active");
@@ -70,7 +72,7 @@ var btns = btnContainer.getElementsByClassName("btn");
 //   });
 // }
 
-// teacher Bar 
+// teacher Bar fix bug
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
@@ -87,3 +89,15 @@ $("#next").click(function() {
 $("#prev").click(function() {
   $(".slider-wrapper").slick("slickPrev");
 })
+
+// navbar sticky  
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("nav-bar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
