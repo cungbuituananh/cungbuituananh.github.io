@@ -41,6 +41,7 @@ export function emailValidation() {
     if (re.test(emailContent)) {
         return true;
     }
+    emailInvalid.innerHTML = "Vui lòng nhập đúng email";
     return false;
 }
 
