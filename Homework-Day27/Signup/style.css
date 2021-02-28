@@ -1,4 +1,6 @@
-#messenger-invalid {
+#nickname-invalid,
+#password-invalid,
+#passwordConfirm-invalid {
     display: none;
     width: 100%;
     margin-top: .25rem;
@@ -6,6 +8,8 @@
     color: #dc3545;
 }
 
-.is-invalid~#messenger-invalid {
+.is-invalid~#nickname-invalid,
+.is-invalid~#password-invalid,
+.is-invalid~#passwordConfirm-invalid {
     display: block;
 }
