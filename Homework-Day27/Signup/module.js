@@ -33,6 +33,26 @@ export function nickInvalid() {
   nickname.classList.remove("is-valid");
 }
 
+
+// Điều kiện check  email 
+export function emailValidation() {
+    let emailContent = email.value.trim().toLowerCase();
+    let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (re.test(emailContent)) {
+        return true;
+    }
+    return false;
+}
+
+export function emailValidate() {
+    email.classList.add("is-valid");
+    email.classList.remove("is-invalid")
+}
+export function emailInvalidate() {
+    email.classList.add("is-invalid");
+    email.classList.remove("is-valid")
+}   
+
 // Điều kiện check password
 export function passwordValidation() {
     let passwordContent = password.value.trim();
