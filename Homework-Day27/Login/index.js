@@ -1,6 +1,4 @@
-
 // nhập tất cả chức năng từ file module.js bằng câu lệnh import 
-
 import * as validate from "./module.js";
 
 // Khai báo biến trong form
