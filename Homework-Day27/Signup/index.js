@@ -12,6 +12,13 @@ signForm.addEventListener("submit", function(e) {
         confirm.nickInvalid(); 
     }
 
+    // Check email
+    if (confirm.emailValidation()) {
+        confirm.emailValidate();
+    } else {
+        confirm.emailInvalidate();
+    }
+
     // Check password
     if (confirm.passwordValidation()) {
         confirm.passValid();
