@@ -28,6 +28,6 @@ form.addEventListener("submit", function (e) {
     }
 
     if (flag) {
-        alert("Gửi form");
+        location.href = "https://cungbuituananh.github.io/Homework-Day27/Main.html";
     }
 });
