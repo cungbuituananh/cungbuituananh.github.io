@@ -5,14 +5,14 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirm = document.getElementById("password-confirm");
 
-// Tạo biến lấy element messenger 
+// Tạo biến lấy element messenger bên phía  HTML
 var messengerInvalid = document.getElementById("nickname-invalid");
 var emailInvalid = document.getElementById("email-invalid");
 var passwordInvalid = document.getElementById("password-invalid");
 var passwordConfirmInvalid = document.getElementById("passwordConfirm-invalid");
 
 
-//  Điều kiện check nickname
+//  Export chức năng (Điều kiện check input nickname )
 export function nickValidation() {
   let nickContent = nickname.value.trim();
   // Điều kiện khi nội dung nhập là mảng rỗng
@@ -23,7 +23,7 @@ export function nickValidation() {
   }
   return true;
 }
-
+// Thêm & xoá class khi điều kiện hợp lý hoặc không hợp lệ
 export function nickValid() {
   nickname.classList.add("is-valid");
   nickname.classList.remove("is-invalid");
@@ -34,9 +34,10 @@ export function nickInvalid() {
 }
 
 
-// Điều kiện check  email 
+// Điều kiện check email - same same với chức năng của nickname, chỉ là thay đổi chút check đầu vào)
 export function emailValidation() {
     let emailContent = email.value.trim().toLowerCase();
+    // điều kiên này copy 
     let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(emailContent)) {
         return true;
