@@ -5,11 +5,13 @@ const signForm = document.getElementById("signup-form");
 signForm.addEventListener("submit", function(e) {
     e.preventDefault();
 
+    let flag = true;
     // Check tên đăng nhập
     if (confirm.nickValidation()) {
         confirm.nickValid(); 
     } else {
         confirm.nickInvalid(); 
+        flag = false;
     }
 
     // Check email
@@ -17,6 +19,7 @@ signForm.addEventListener("submit", function(e) {
         confirm.emailValidate();
     } else {
         confirm.emailInvalidate();
+        flag = false;
     }
 
     // Check password
@@ -24,6 +27,7 @@ signForm.addEventListener("submit", function(e) {
         confirm.passValid();
     } else {
         confirm.passInvalid();
+        flag = false;
     }
 
     // Confirm password 
@@ -31,5 +35,8 @@ signForm.addEventListener("submit", function(e) {
         confirm.passConfirmValid();
     } else {
         confirm.passConfirmInvalid()
+        flag = false;
     }
+
+
 })
