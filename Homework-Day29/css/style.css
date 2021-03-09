@@ -5,5 +5,8 @@
 
 .post h3 {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 17px;
+    font-style: bold;
+    color: #999;
+    
 }
