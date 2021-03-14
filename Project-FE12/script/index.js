@@ -73,7 +73,14 @@ let signupValidate = (e) => {
     passwordConfirmContent.classList.remove("is-invalid");
     flag = true 
   }
+
 };
+
+let cancelForm = (e) => {
+    e.preventDefault();
+    ctnSignupForm.classList.add("d-none");
+}
 btnLogin.addEventListener("click", displayLogin);
 btnSignup.addEventListener("click", displaySigup);
 formSignup.addEventListener("submit", signupValidate);
+formSignup.addEventListener("reset", cancelForm);
