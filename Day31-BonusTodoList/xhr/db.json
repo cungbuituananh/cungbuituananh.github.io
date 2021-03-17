@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Học XHR",
+      "status": false,
+      "created": "14:58:18, 17/3/2020"
+    },
+    {
+      "id": 2,
+      "title": "Làm app todo",
+      "status": true,
+      "created": "14:58:08, 17/3/2021"
+    }
+  ]
+}
