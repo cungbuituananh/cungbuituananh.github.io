@@ -1,10 +1,8 @@
-body {
-    background-color: #E5E5E5 !important;
-}
 .box-editor {
-    background-color: white !important;
-    height: 100%;
+    background-color: gray;
+    height: 100% !important;
 }
+
 #select-text p, 
 #select-font p,
 #select-letter p,
@@ -18,7 +16,8 @@ body {
 }
 
 #select-text svg {
-    margin: 10px 10px 10px 0 ;
+   position: absolute;
+   right:0;
 }
 
 .select-box, #select-btn {
@@ -43,7 +42,9 @@ body {
     width: 18px;
     height: 18px;
     margin-left: 12px;
+    margin-right: 10px;
 }
+
 .selectors p, .selectors span {
     font-size: 12px !important;
 }
