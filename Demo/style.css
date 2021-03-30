@@ -1,8 +1,10 @@
 .box-editor {
     background-color: gray;
-    height: 100% !important;
-}
 
+}
+.gitbody > div {
+    height: 100%;
+}
 #select-text p, 
 #select-font p,
 #select-letter p,
@@ -17,7 +19,7 @@
 
 #select-text svg {
    position: absolute;
-   right:0;
+   right:10px;
 }
 
 .select-box, #select-btn {
