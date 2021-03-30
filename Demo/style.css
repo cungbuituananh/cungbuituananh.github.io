@@ -1,0 +1,57 @@
+body {
+    background-color: #E5E5E5 !important;
+}
+.box-editor {
+    background-color: white !important;
+    height: 100%;
+}
+#select-text p, 
+#select-font p,
+#select-letter p,
+#select-color p {
+    margin: 0;
+}
+
+#select-text p, 
+#font-style p {
+    padding-left: 16px;
+}
+
+#select-text svg {
+    margin: 10px 10px 10px 0 ;
+}
+
+.select-box, #select-btn {
+    width: 240px ;
+    height: 40px;
+    border: 1px solid #E8ECF0;
+    border-radius: 4px ;
+    margin-bottom: 10px;
+}
+
+#font-style {
+    border-right: 1px solid #E8ECF0;
+    padding-right: 110px;
+    height: 100%;
+
+}
+
+.box-color {
+    border-radius: 3px;
+    border: 1px solid #E8ECF0; 
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+}
+.selectors p, .selectors span {
+    font-size: 12px !important;
+}
+
+.selectors a {
+    cursor: pointer;
+}
+
+svg {
+    cursor: pointer;
+}
